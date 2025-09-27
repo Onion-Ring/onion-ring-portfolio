@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+/*CSS Reset*/
+*{
+    outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body{
+    background-color: rgb(68, 60, 53);
+    font-family: 'poppins', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('./fonts/poppins.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

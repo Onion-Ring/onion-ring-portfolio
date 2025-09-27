@@ -1,0 +1,88 @@
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.presentation{
+    height: 900px;    
+    position: relative;
+    background-color: rgb(53, 52, 50);    
+    z-index: 1;
+}
+
+.avatar_section{
+    width: 20%;
+    position: absolute;
+    right: 0;
+    height: 500px;
+    padding: 10px;
+}
+
+.avatar_section__wrapper{
+    position: absolute;
+    right: 9%;
+    width: 300px;   
+    height: 400px; 
+    text-align: center;
+    margin-top: 30px;    
+    
+}
+
+.avatar_section__image{        
+    z-index: -10;
+    width: 200px;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;            
+    position: relative;      
+}
+
+.avatar_section__image img{    
+    width: 200px;        
+    border-radius: 50px;              
+}
+
+
+/* animated border css code */
+
+ .avatar_section__image::after, .avatar_section__image::before {    
+    content: '';
+    position: absolute;
+    height: 99%;
+    width: 103%;
+    background-image: conic-gradient(from var(--angle),rgb(125, 125, 221),rgb(105, 105, 226),rgb(85, 85, 226),rgb(65, 65, 231),rgb(226, 190, 135),rgb(226, 190, 105),rgb(226, 130, 75),rgb(226, 110, 45),rgb(125, 125, 221));
+    top: 48.4%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 2px;
+    border-radius: 50px;
+    animation: 5s spin linear infinite;
+}
+
+ .avatar_section__image::before{
+    filter: blur(1.2rem);    
+    opacity: 0.9;    
+ } 
+
+ .avatar-section__title{
+    color: rgb(170, 143, 102);
+    margin: 15px 0 15px 0;
+    font-size: 30px;
+ }
+
+ .avatar-section__position{
+    color: rgb(100, 100, 177);
+    font-size: 15px;
+ }
+
+
+ @keyframes spin {
+    from{
+        --angle:0deg;
+    }
+    to{
+        --angle:360deg;
+    }    
+ }
