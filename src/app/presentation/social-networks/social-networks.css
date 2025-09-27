@@ -1,8 +1,8 @@
 :host{
     position: absolute;
     z-index: 10;
-    left: 0;
-    top: 33%;
+    right: 0;
+    top: 43%;
 }
 
 .social-networks__container{
@@ -12,11 +12,11 @@
 
 .social-networks__container__item:first-child{
     background-color: rgb(235, 235, 235);
-    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .social-networks__container__item:last-child {
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     background-color: rgb(226, 226, 226);
 }
 

@@ -8,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class VsCode {
 
+  Arr = Array
+  lines:number = 24;
+
+
+
+
+
 }
