@@ -11,30 +11,27 @@
             <li>Terminal</li>
             <li>Help</li>
         </ul>
-
         <ul class="vs-code-ui__navbar__search">
             <li class="vs-code-ui__navbar__search-arrows"><img src="/assets/vs-icons/arrow_left.svg" alt="arrow left"/> <img src="/assets/vs-icons/arrow_right.svg" alt="arrow right" /></li>                        
             <li><img src="/assets/vs-icons/search.svg" class="vs-code-ui__navbar__search-search-icon" alt="search icon"/><input class="vs-code-ui__navbar__search__search-input" placeholder="Portfolio"/></li>
             <li><img src="/assets/vs-icons/desktop.svg" alt="vscode icon"/></li>
         </ul>   
-
         <ul class="vs-code-ui__navbar__layout">
             <li><i class="codicon codicon-layout"></i></li>
             <li><i class="codicon codicon-layout-sidebar-left"></i></li>
             <li><i class="codicon codicon-layout-panel"></i></li>
             <li><i class="codicon codicon-layout-sidebar-right"></i></li>
         </ul>
-
-
         <ul class="vs-code-ui__navbar__window-options">
-            <li><img class="vs-code-ui__navbar__window-options-minimize" src="/assets/vs-icons/minimize.svg" alt="minimize window"/></li>
-            <li><img class="vs-code-ui__navbar__window-options-maximize" src="/assets/vs-icons/maximize.svg" alt="maximize window"/></li>
-            <li><img class="vs-code-ui__navbar__window-options-close" src="/assets/vs-icons/close.svg" alt="Close window"/></li>            
+            <li class="minimize"><img class="vs-code-ui__navbar__window-options-minimize" src="/assets/vs-icons/minimize.svg" alt="minimize window"/></li>
+            <li class="maximize"><img class="vs-code-ui__navbar__window-options-maximize" src="/assets/vs-icons/maximize.svg" alt="maximize window"/></li>
+            <li class="close"><img class="vs-code-ui__navbar__window-options-close" src="/assets/vs-icons/close.svg" alt="Close window"/></li>            
         </ul>
     </nav>
 
-    <hr class="ui-separator"/>
 
+
+    <hr class="ui-separator"/>
     <aside class="vs-code-ui__right-menu">
         <hr class="ui-separator vertical">
         <ul class="vs-code-ui__right-menu__options">
@@ -44,20 +41,53 @@
             <li><i class="codicon codicon-debug-alt large"></i></li>
             <li><i class="codicon codicon-extensions large"></i></li>
         </ul>
-
         <ul class="vs-code-ui__right-menu__options bottom">
             <li><i class="codicon codicon-account large white"></i></li>
             <li><i class="codicon codicon-settings-gear large white"></i></li>
+            
         </ul>
-
+        
     </aside>
-
     <aside class="vs-code-ui__explorer">
         <hr class="ui-separator vertical">
-    </aside>
+        
+        <div class="explorer">
+            <span>Explorer</span><i class="codicon codicon-ellipsis"></i>
+        </div>
+
+            <ul class="vs-code-ui__explorer_project__repo">                
+                <li class="highlight" ><i class="codicon codicon-chevron-down down-ico"></i> onion-ring-portfolio</li>                
+                <ul>
+                    <li><i class="codicon codicon-chevron-right"></i>.angular</li>
+                    <li><i class="codicon codicon-chevron-right"></i>.vscode</li>
+                    <li><i class="codicon codicon-chevron-right"></i>node_modules</li>
+                    <li><i class="codicon codicon-chevron-right"></i>public</li>
+                    <li><i class="codicon codicon-chevron-right"></i>src</li>
+                    <li><i class="codicon codicon-gear  small grey"></i> .editorconfig</li>
+                    <li><i class="codicon codicon-gear  small grey"></i> .gitignore</li>
+                    <li><span class="brackets">&#123; &#125; </span>angular.json</li>
+                    <li><span class="brackets">&#123; &#125; </span>package-lock.json</li>
+                    <li><span class="brackets">&#123; &#125; </span>package.json</li>
+                    <li><i class="codicon codicon-info info"></i> README.md</li>
+                    <li><span class="brackets">&#123; &#125; </span>tsconfig.app.json</li>
+                    <li><img src="/assets/vs-icons/ts.svg" alt="ts icon" class="ts"/> tsconfig.json</li>
+                    <li><span class="brackets">&#123; &#125; </span>tsconfig.spec.json</li>
+                </ul>
+            </ul>
 
 
-    
+            <div class="outline-timeline">
+                <div>
+                    <hr class="ui-separator"/>
+                    <i class="codicon codicon-chevron-right"></i>
+                    <p>OUTLINE</p></div>
+                <div>
+                    <hr class="ui-separator" />
+                    <i class="codicon codicon-chevron-right"></i><p>TIMELINE</p></div>
+                    <hr class="ui-separator" />
+            </div>
+        
+    </aside>    
     <main class="vs-code-ui__file-visualizer">
         
         <div class="vs-code-ui__file-visualizer__files-open">            
@@ -68,10 +98,7 @@
                 <img class="vs-code-ui__file-visualizer__files-open__file__close" src="/assets/vs-icons/close.svg" alt="Close window" />
                 <hr class="ui-separator vertical">
             </div>            
-        </div>
-
-  
-
+        </div>  
         <div class="vs-code-ui__file-visualizer__file">
             <hr class="ui-separator file "/>
 
@@ -82,49 +109,42 @@
                     }
                 </ol>
             </div>
-
-            <div class="vs-code-ui__file-visualizer__file__content">
-                
-                
+            <div class="vs-code-ui__file-visualizer__file__content">                                
             </div>
-
-        </div>
-        
-
-    </main>
-    
-
-    
+        </div>        
+    </main>        
     <footer class="vs-code-ui__console">
         <hr class="ui-separator"/>
         <div>
-            <ul>
-                <li>PROBLEMS</li>
-                <li>OUTPUT</li>
-                <li>DEBUG CONSOLE</li>
+            <ul class="vs-code-ui__console__console-tabs">
+                <li class="vs-code-ui__console__console-tabs__tab">PROBLEMS</li>
+                <li class="vs-code-ui__console__console-tabs__tab">OUTPUT</li>
+                <li class="vs-code-ui__console__console-tabs__tab">DEBUG CONSOLE</li>
                 <!-- highligh this one -->
-                <li>TERMINAL</li>
-                <li>PORTS</li>
+                <li class="vs-code-ui__console__console-tabs__tab selected">TERMINAL</li>
+                <li class="vs-code-ui__console__console-tabs__tab">PORTS</li>
             </ul>
-
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+            <ul class="vs-code-ui__console__options">
+                <li class="vs-code-ui__console__options__option"><i class="codicon codicon-add"></i></li>
+                <li class="vs-code-ui__console__options__option"><i class="codicon codicon-chevron-down"></i></li>
+                <li class="vs-code-ui__console__options__option"><i class="codicon codicon-ellipsis"></i></li>
+                <li class="vs-code-ui__console__options__option">|</li>
+                <li class="vs-code-ui__console__options__option"><img alt="fullscreen icon" src="/assets/vs-icons/fullscreen.svg"></li>
+                <li class="vs-code-ui__console__options__option"><i class="codicon codicon-chrome-close"></i></li>
             </ul>
         </div>
 
-        <div>
+        <div class="vs-code-ui__console__cli">
+            <hr class="ui-separator vertical" />
             <p>D:\GithubRepos\Portfolio</p>
         </div>
 
-        <div>
-
-        </div>
-        
-    </footer>
-    
+        <div class="vs-code-ui__console__consoles">
+            
+            <div class="vs-code-ui__console__consoles__console">
+                <i class="codicon codicon-terminal"></i>
+                <span>powershell</span>
+            </div>
+        </div>        
+    </footer>    
 </div>

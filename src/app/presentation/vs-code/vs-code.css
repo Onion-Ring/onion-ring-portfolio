@@ -14,8 +14,7 @@ li {
 
 .vs-code-ui{
     width: 80%;
-    height: 900px;
-    background-color: rgb(87, 74, 74);
+    height: 900px;    
     position: relative;
 }
 
@@ -204,6 +203,15 @@ li {
     font-size: 32px;    
 }
 
+.small{
+    font-size: small;
+
+}
+
+.grey{
+    color: rgb(90, 90, 90);
+}
+
 
 
 /*  */
@@ -221,6 +229,82 @@ li {
     left: 60px;
 }
 
+.vs-code-ui__explorer_project__repo{
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 35px;
+}
+
+.vs-code-ui__explorer_project__repo li{
+    width: 100%;
+    padding: 3px;        
+    height: 30px;
+    margin: 0;
+}
+
+.vs-code-ui__explorer_project__repo li:hover {
+background-color: #2e3331;
+}
+
+.explorer{
+    width: 100%;
+    color: rgb(192, 192, 192);
+}
+
+.explorer span{
+    position: absolute;
+    left: 10px;
+    font-size: 15px;
+}
+
+.explorer i{
+    position: absolute;
+    right: 15px;
+    top:10px;
+}
+
+.vs-code-ui__explorer_project__repo ul > li{
+    padding-left: 15px;
+}
+
+.outline-timeline{
+    position: absolute;
+    bottom: 0;    
+    left: 0;
+    width: 100%;
+}
+
+.outline-timeline p, .outline-timeline i{
+    display: inline;
+    font-size: 14px;
+    color: rgb(192, 192, 192);
+}
+
+.outline-timeline p{
+    margin-left: 5px;
+}
+
+.ts{
+    width: 14px;
+}
+
+.info{    
+    color: #32c3e7;
+}
+
+.highlight{
+   background: #04375c; 
+   border: 1px solid #0279d4;
+}
+
+.brackets{
+    color: #e7e432;
+    font-weight: bold;
+        font-size: 12px;
+}
+
 /*  */
 
 
@@ -235,6 +319,69 @@ li {
     background-color: #1f1f1f;
 }
 
+.vs-code-ui__console__console-tabs{
+    position: absolute;
+    left: 10px;
+    top: 3px;
+}
+
+.vs-code-ui__console__console-tabs__tab{
+    color: #979797;
+    font-size: 12px;
+    margin-right: 17px;
+}
+
+.vs-code-ui__console__console-tabs__tab:hover {
+    color: #cfcfcf;
+    
+}
+
+.selected{
+    border-bottom: 1.3px solid #47a8f1;
+}
+
+.vs-code-ui__console__options{
+    position: absolute;
+    right: 20px;
+    top: 3px;
+}
+
+.vs-code-ui__console__options__option {
+    margin-left: 0;
+    padding: 4px;
+    border-radius: 6px;
+}
+
+.vs-code-ui__console__options__option:hover{
+    background-color: #363636;
+}
+
+.vs-code-ui__console__consoles{
+    position: absolute;
+    right: 0;
+    top: 30px;
+    color: rgb(192, 192, 192);
+    /* background-color: #0279d4; */
+    height: 204px;
+    width: 10%;
+}
+
+.vs-code-ui__console__consoles__console{
+    width: 100%;
+}
+
+.vs-code-ui__console__consoles__console i{
+    margin-left: 11px;
+}
+
+.vs-code-ui__console__cli{
+    width: 90%;
+    position: relative;
+    top: 25px;
+    padding: 3px;
+    height: 203px;
+    left: 0;
+}
 
 /*  */
 
@@ -320,6 +467,12 @@ li {
     height: 100%;    
 }
 
+
+
+.down-ico{
+    color: rgb(192, 192, 192);    
+}
+
 .blue {
-    background-color: #4d7cff;
+    background-color: #0e89e7;    
 }
