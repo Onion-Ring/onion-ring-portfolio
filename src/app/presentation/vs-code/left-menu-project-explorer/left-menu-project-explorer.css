@@ -1,0 +1,86 @@
+.vs-code-ui__explorer {
+    width: 180px;
+    height: 870px;
+    background-color: #1f1f1f;
+    padding: 4px;
+    position: absolute;
+    top: 31px;
+    left: 60px;
+}
+
+.vs-code-ui__explorer_project__repo {
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 35px;
+}
+
+.vs-code-ui__explorer_project__repo li {
+    width: 100%;
+    padding: 3px;
+    height: 30px;
+    margin: 0;
+}
+
+.vs-code-ui__explorer_project__repo li:hover {
+    background-color: #2e3331;
+}
+
+.explorer {
+    width: 100%;
+    color: rgb(192, 192, 192);
+}
+
+.explorer span {
+    position: absolute;
+    left: 10px;
+    font-size: 15px;
+}
+
+.explorer i {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+.vs-code-ui__explorer_project__repo ul>li {
+    padding-left: 15px;
+}
+
+.outline-timeline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.outline-timeline p,
+.outline-timeline i {
+    display: inline;
+    font-size: 14px;
+    color: rgb(192, 192, 192);
+}
+
+.outline-timeline p {
+    margin-left: 5px;
+}
+
+.ts {
+    width: 14px;
+}
+
+.info {
+    color: #32c3e7;
+}
+
+.highlight {
+    background: #04375c;
+    border: 1px solid #0279d4;
+}
+
+.brackets {
+    color: #e7e432;
+    font-weight: bold;
+    font-size: 12px;
+}

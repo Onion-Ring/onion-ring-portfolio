@@ -1,0 +1,133 @@
+.vs-code-ui__navbar__menu,
+.vs-code-ui__navbar__search,
+.vs-code-ui__navbar__layout,
+.vs-code-ui__navbar__window-options {
+    list-style-type: none;
+}
+
+.vs-code-ui__navbar {
+    height: 30px;
+    background-color: #1f1f1f;
+    padding: 4px;
+}
+
+.vs-code-ui__navbar__menu {
+    width: 30%;
+    position: absolute;
+    top: 0;
+    left: -8px;
+}
+
+.vs-code-ui__navbar__menu img {
+    width: 15px;
+}
+
+.vs-code-ui__navbar__menu li {
+    padding: 4px;
+    height: 24px;
+    border-radius: 5px;
+}
+
+.vs-code-ui__navbar__menu li+li:hover,
+.vs-code-ui__navbar__layout i:hover {
+    background-color: rgb(61, 61, 61);
+    color: rgb(211, 211, 211);
+}
+
+/* search menu */
+.vs-code-ui__navbar__search {
+    width: 40%;
+    position: absolute;
+    top: 0;
+    left: 33%;
+}
+
+.vs-code-ui__navbar__search li:last-child {
+    position: absolute;
+    right: 0px;
+    top: 2px;
+}
+
+.vs-code-ui__navbar__search__search-input {
+    border-radius: 5px;
+    border: 1.5px rgb(99, 99, 99) solid;
+    height: 22px;
+    position: absolute;
+    background-color: #303030;
+    top: 3.6px;
+    width: 85%;
+    left: 10%;
+}
+
+.vs-code-ui__navbar__search__search-input:hover {
+    background-color: #343434;
+}
+
+
+.vs-code-ui__navbar__search-arrows {
+    position: absolute;
+    left: -10px;
+    top: 2px;
+}
+
+.vs-code-ui__navbar__search-arrows img {
+    margin-left: 4px;
+}
+
+.vs-code-ui__navbar__search-search-icon {
+    position: absolute;
+    top: 1.5px;
+    left: 44.3%;
+    transform: scaleX(-1);
+    z-index: 10;
+}
+
+.vs-code-ui__navbar__search__search-input::placeholder {
+    color: rgb(192, 192, 192);
+    text-align: center;
+}
+
+/* layout menu */
+.vs-code-ui__navbar__layout {
+    width: 9%;
+    right: 7%;
+    position: absolute;
+    top: 4px;
+}
+
+.vs-code-ui__navbar__layout i {
+    padding: 4px;
+    margin-left: -6px;
+}
+
+
+.vs-code-ui__navbar__window-options {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    width: 6%;
+}
+
+.vs-code-ui__navbar__window-options-maximize {
+    width: 20px;
+    position: absolute;
+    top: 2.3px;
+    right: 37px;
+}
+
+.vs-code-ui__navbar__window-options-minimize {
+    position: absolute;
+    top: -7px;
+    right: 72px;
+}
+
+.vs-code-ui__navbar__window-options-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+
+.vs-code-ui__navbar__window-options-close:hover {
+    background-color: red;
+}

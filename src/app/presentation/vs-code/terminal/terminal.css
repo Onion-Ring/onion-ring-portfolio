@@ -1,0 +1,113 @@
+.vs-code-ui__console {
+    position: absolute;
+    bottom: 0;
+    left: 240px;
+    width: 84.4%;
+    height: 230px;
+    background-color: #1f1f1f;
+}
+
+.vs-code-ui__console__console-tabs {
+    position: absolute;
+    left: 10px;
+    top: 3px;
+}
+
+.vs-code-ui__console__console-tabs__tab {
+    color: #979797;
+    font-size: 12px;
+    margin-right: 17px;
+}
+
+.vs-code-ui__console__console-tabs__tab:hover {
+    color: #cfcfcf;
+
+}
+
+.selected {
+    border-bottom: 1.3px solid #47a8f1;
+    color: #d4d4d4;
+}
+
+.vs-code-ui__console__options {
+    position: absolute;
+    right: 20px;
+    top: 3px;
+}
+
+.vs-code-ui__console__options-menu {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 30px;
+}
+
+.vs-code-ui__console__options__option {
+    margin-left: 0;
+    padding: 4px;
+    border-radius: 6px;
+}
+
+.vs-code-ui__console__options__option:hover {
+    background-color: #363636;
+}
+
+.vs-code-ui__console__consoles {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    color: rgb(192, 192, 192);
+    /* background-color: #0279d4; */
+    height: 204px;
+    width: 10%;
+}
+
+.vs-code-ui__console__consoles__console {
+    width: 100%;
+    border-left: 1.3px solid #47a8f1;
+    color: #d4d4d4;
+    background: #4d4d4d;
+    top: 7px;
+    left: -1px;
+    font-size: 13px;
+    position: absolute;
+}
+
+.vs-code-ui__console__consoles__console span {
+    margin-left: 6px;
+}
+
+.vs-code-ui__console__consoles__console i {
+    margin-left: 6px;
+    margin-top: 3px;
+}
+
+.vs-code-ui__console__cli {
+    width: 90%;
+    position: relative;
+    top: -4px;
+    padding: 3px;
+    height: 193px;
+    left: 0;
+}
+
+.vs-code-ui__console__options-menu__scroll-bar{
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;    
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.vs-code-ui__console__cli p {
+    color: #e6e6e6;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 12px;
+}
+
+.down-ico {
+    color: rgb(192, 192, 192);
+}
