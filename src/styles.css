@@ -38,12 +38,57 @@ li:hover{
 }
 
 body{
-    background-color: rgb(68, 60, 53);
+    background-color: rgb(37, 37, 36);
     font-family: 'poppins', sans-serif;
+}
+
+@keyframes resize-img {
+
+    10% {
+        transform: scale(1.04);
+    }
+
+    20% {
+        transform: scale(1.08);
+    }
+
+    30% {
+        transform: scale(1.12);
+    }
+
+    40% {
+        transform: scale(1.16);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    60% {
+        transform: scale(1.24);
+    }
+
+    70% {
+        transform: scale(1.28);
+    }
+
+    80% {
+        transform: scale(1.32);
+    }
+
+    90% {
+        transform: scale(1.36);
+    }
+
+    100% {
+        transform: scale(1.4);
+    }
+
 }
 
 button {
     cursor: pointer;
+    border: none;
 }
 
 @font-face {

@@ -6,8 +6,7 @@
 
 .presentation{
     height: 900px;    
-    position: relative;
-    background-color: rgb(53, 52, 50);    
+    position: relative;    
     z-index: 1;
 }
 
@@ -18,6 +17,28 @@
     height: 500px;
     padding: 10px;
 }
+
+.avatar_section__hamburger{
+    position: absolute;
+    z-index: 10;
+    right: 40px;
+    top: 15px;    
+    width: 35px;
+}
+
+.avatar_section__hamburger__btn {
+    width: 35px;
+    background: transparent;        
+}
+
+.avatar_section__hamburger__btn:hover {
+    animation: resize-img 1.6s infinite alternate;
+}
+
+.avatar_section__hamburger__btn img{
+    width: 35px;
+}
+
 
 .avatar_section__wrapper{
     position: absolute;

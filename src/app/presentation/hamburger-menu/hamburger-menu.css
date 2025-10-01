@@ -1,0 +1,105 @@
+.backdrop {
+    width: 100vw;
+    height: 100vh;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    position: fixed;
+    
+    animation: backdrop-fade 0.3s ease-in-out forwards;
+}
+
+.hamburger-menu {
+    z-index: 100;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    left: 25%;
+    text-align: center;
+}
+
+.hamburger-menu__menu-options {
+    padding: 8px;
+}
+
+.hamburger-menu__menu-options__option {
+    display: block;
+    padding: 8px;
+    font-size: 28px;
+    cursor: default;
+    margin: 10px;
+}
+
+.hamburger-menu__menu-options__option:hover {
+    animation: font-color-change 6s infinite alternate;
+}
+
+
+@keyframes font-color-change {
+
+    10% {
+        color: rgb(223, 176, 115);
+    }
+
+    20% {
+        color: rgb(223, 156, 75);
+    }
+
+    30% {
+        color: rgb(223, 136, 55);
+    }
+
+    40% {
+        color: rgb(223, 116, 35);
+    }
+
+    50% {
+        color: rgb(223, 96, 15);
+    }
+
+    60% {
+        color: rgb(15, 81, 223);
+    }
+
+    70% {
+        color: rgb(35, 101, 223);
+    }
+
+    80% {
+        color: rgb(55, 121, 223);
+    }
+
+    90% {
+        color: rgb(75, 141, 223);
+    }
+
+    100% {
+        color: rgb(95, 161, 223);
+    }
+
+}
+
+@keyframes backdrop-fade {
+    25% {
+        background: rgba(0, 0, 0,0.1);
+        backdrop-filter: blur(1px);
+    }
+
+    50% {
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(2px);
+    }
+
+    75% {
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(3px);
+    }
+
+    100% {
+        background: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(4px);
+    }
+
+    
+}

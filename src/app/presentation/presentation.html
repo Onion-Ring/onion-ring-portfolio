@@ -1,5 +1,16 @@
 <header class="presentation">
-    <div class="avatar_section">
+    
+    <div class="avatar_section__hamburger">
+        <button class="avatar_section__hamburger__btn" (click)="onOpenHamburgerMenu()">
+            <img src="/assets/icons/hamburger-menu.svg" alt="Hamburger menu icon" />
+        </button>
+    </div>
+
+    @if (isHamburgerMenuOpen()) {
+        <app-hamburger-menu (hamburgerMenuClose)="onCloseHamburgerMenu()" />
+    }
+
+    <div class="avatar_section">   
         <div class="avatar_section__wrapper">
             <div class="avatar_section__image">
                 <img alt="Profile avatar" src="/assets/new213.jpg">
@@ -8,6 +19,6 @@
             <p class="avatar-section__position">Full-Stack .NET Developer</p>
         </div>
     </div>    
-    <!-- <div app-social-networks></div> -->
-    <app-vs-code/>
+    <div app-social-networks></div>
+    <app-vs-code />
 </header>
