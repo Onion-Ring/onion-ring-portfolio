@@ -1,15 +1,15 @@
-<div class="backdrop"></div>
-<div class="hamburger-menu">
+<div class="backdrop" [class.backdrop-fade-out-menu]="fadeOutMenu()" ></div>
+
+<div class="hamburger-menu" >
 
     <ul class="hamburger-menu__menu-options">
-        <li class="hamburger-menu__menu-options__option">Menu Option 1</li>
-        <li class="hamburger-menu__menu-options__option">Menu Option 2</li>
-        <li class="hamburger-menu__menu-options__option">Menu Option 3</li>
-        <li class="hamburger-menu__menu-options__option">Menu Option 4</li>
+        <li class="hamburger-menu__menu-options__option" [class.option-text-disappear]="fadeOutMenu()">Menu Option 1</li>
+        <li class="hamburger-menu__menu-options__option" [class.option-text-disappear]="fadeOutMenu()">Menu Option 2</li>
+        <li class="hamburger-menu__menu-options__option" [class.option-text-disappear]="fadeOutMenu()">Menu Option 3</li>
+        <li class="hamburger-menu__menu-options__option" [class.option-text-disappear]="fadeOutMenu()">Menu Option 4</li>
     </ul>
 
-    <button (click)="onCloseHamburgerMenu()" class="hamburger-menu__close-btn">
-        CLOSE
-    </button>
-
 </div>
+    <button (click)="onCloseHamburgerMenu()" class="hamburger-menu__close-btn">
+        <i class="codicon codicon-close"></i>
+    </button>

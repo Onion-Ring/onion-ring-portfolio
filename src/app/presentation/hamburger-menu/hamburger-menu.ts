@@ -1,4 +1,4 @@
-import { Component, input, output } from '@angular/core';
+import { Component, input, output, signal } from '@angular/core';
 
 @Component({
   selector: 'app-hamburger-menu',
@@ -8,12 +8,13 @@ import { Component, input, output } from '@angular/core';
 })
 export class HamburgerMenu {
 
-
-  hamburgerMenuClose = output<void>();
+  public fadeOutMenu = signal<boolean>(false);
+  public hamburgerMenuClose = output<void>();
 
 
   onCloseHamburgerMenu() {
-    this.hamburgerMenuClose.emit();
+    this.fadeOutMenu.set(true); 
+    new Promise(resolve => setTimeout(resolve, 850)).then(() => { this.hamburgerMenuClose.emit(); });        
   }
 
 }
