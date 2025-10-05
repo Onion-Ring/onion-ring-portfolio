@@ -4,13 +4,14 @@
     inherits: false;
 }
 
-.presentation{
-    height: 900px;    
-    position: relative;    
+.presentation {
+    height: 900px;
+    position: relative;
     z-index: 1;
+    
 }
 
-.avatar_section{
+.avatar_section {
     width: 20%;
     position: absolute;
     right: 0;
@@ -18,61 +19,62 @@
     padding: 10px;
 }
 
-.avatar_section__hamburger{
+.avatar_section__hamburger {
     position: absolute;
     z-index: 10;
     right: 40px;
-    top: 15px;    
+    top: 15px;
     width: 35px;
 }
 
 .avatar_section__hamburger__btn {
     width: 35px;
-    background: transparent;        
+    background: transparent;
 }
 
 .avatar_section__hamburger__btn:hover {
     animation: resize-img 1.6s infinite alternate;
 }
 
-.avatar_section__hamburger__btn img{
+.avatar_section__hamburger__btn img {
     width: 35px;
 }
 
 
-.avatar_section__wrapper{
+.avatar_section__wrapper {
     position: absolute;
     right: 9%;
-    width: 300px;   
-    height: 400px; 
+    width: 300px;
+    height: 400px;
     text-align: center;
-    margin-top: 30px;    
-    
+    margin-top: 30px;
+
 }
 
-.avatar_section__image{        
+.avatar_section__image {
     z-index: -10;
     width: 200px;
     margin-top: 40px;
     margin-left: 50px;
-    margin-right: 50px;            
-    position: relative;      
+    margin-right: 50px;
+    position: relative;
 }
 
-.avatar_section__image img{    
-    width: 200px;        
-    border-radius: 50px;              
+.avatar_section__image img {
+    width: 200px;
+    border-radius: 50px;
 }
 
 
 /* animated border css code */
 
- .avatar_section__image::after, .avatar_section__image::before {    
+.avatar_section__image::after,
+.avatar_section__image::before {
     content: '';
     position: absolute;
     height: 99%;
     width: 103%;
-    background-image: conic-gradient(from var(--angle),rgb(125, 125, 221),rgb(105, 105, 226),rgb(85, 85, 226),rgb(65, 65, 231),rgb(226, 190, 135),rgb(226, 190, 105),rgb(226, 130, 75),rgb(226, 110, 45),rgb(125, 125, 221));
+    background-image: conic-gradient(from var(--angle), rgb(125, 125, 221), rgb(105, 105, 226), rgb(85, 85, 226), rgb(65, 65, 231), rgb(226, 190, 135), rgb(226, 190, 105), rgb(226, 130, 75), rgb(226, 110, 45), rgb(125, 125, 221));
     top: 48.4%;
     left: 50%;
     translate: -50% -50%;
@@ -82,28 +84,49 @@
     animation: 5s spin linear infinite;
 }
 
- .avatar_section__image::before{
-    filter: blur(1.2rem);    
-    opacity: 0.9;    
- } 
+.avatar_section__image::before {
+    filter: blur(1.2rem);
+    opacity: 0.9;
+}
 
- .avatar-section__title{
+.avatar-section__title {
     color: rgb(202, 152, 77);
     margin: 15px 0 15px 0;
     font-size: 30px;
- }
+}
 
- .avatar-section__position{
+.avatar-section__position {
     color: rgb(138, 138, 226);
     font-size: 15px;
- }
+}
 
 
- @keyframes spin {
-    from{
-        --angle:0deg;
+@keyframes spin {
+    from {
+        --angle: 0deg;
     }
-    to{
-        --angle:360deg;
-    }    
- }
+
+    to {
+        --angle: 360deg;
+    }
+}
+
+
+@media (max-width: 1740px) {
+    .avatar_section {
+        width: 100%;
+        position: relative;
+        height: 500px;
+        padding: 10px;
+    }
+
+    .avatar_section__wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+
+}

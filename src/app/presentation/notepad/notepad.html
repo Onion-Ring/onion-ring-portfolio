@@ -1,0 +1,56 @@
+<div class="notepad" [style.width]="width()+'px'" [style.height]="height()+'px'">
+
+    <div class="notepad__menu">
+        <img alt="notepad icon" src="/assets/icons/notepad.png" />
+        <p class="notepad__menu__file-title">Presentation.txt - Notepad</p>
+        <div class="notepad__menu__window-options">
+            <i class="codicon codicon-chrome-minimize"> </i>
+            <i class="codicon codicon-chrome-maximize"> </i>
+            <i class="codicon codicon-close"> </i>            
+        </div>
+    </div>
+
+    <div class="notepad__options">
+        <ul>
+            <li>File</li>
+            <li>Edit</li>
+            <li>Format</li>
+            <li>View</li>
+            <li>Help</li>
+        </ul>
+    </div>
+
+    <textarea class="notepad__text">
+        {{content()}}
+    </textarea>
+
+    <div class="notepad__scrollbar__vertical">
+        
+        <i class="codicon codicon-chevron-up"></i>
+        <i class="codicon codicon-chevron-down"></i>
+    </div>
+
+    <span class="notepad__fill"></span>
+
+    <div class="notepad__scrollbar">
+        <div class="notepad__scrollbar__icon-group">
+            <i class="codicon codicon-chevron-left"></i>
+            <i class="codicon codicon-chevron-right"></i>
+        </div>            
+    </div>
+
+    <div class="notepad__file-info">
+        <div class="notepad__file-info__info">
+            
+                <ul>
+                    <li>Line 1, column 1</li>
+                    <li>100%</li>
+                    <li>Windows(CRLF)</li>
+                    <li>UTF-8</li>
+                </ul>
+            
+        </div>
+    </div>
+
+
+</div>

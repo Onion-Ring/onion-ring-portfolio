@@ -1,0 +1,154 @@
+.notepad {
+    display: none;    
+    background: #fcfcfc;
+    position: relative;
+}
+
+.notepad__menu {
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgb(233, 203, 72);
+}
+
+.notepad__menu>img {
+    width: 45px;
+    position: absolute;
+    left: -10px;
+    top: -6px;
+}
+
+.notepad__menu__file-title {
+    font-size: 12px;
+    position: absolute;
+    top: 6px;
+    left: 25px;
+}
+
+.notepad__menu__window-options {
+    position: absolute;
+    right: 9px;
+}
+
+.notepad__menu__window-options i {
+    margin-left: 10px;
+    position: relative;
+    top: 4px;
+    font-size: 16px;
+}
+
+.notepad__options {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    height: 20px;
+    border-bottom: 2px solid rgb(224, 224, 224);
+}
+
+
+.notepad__options ul {
+    position: relative;
+    bottom: 4px;
+}
+
+.notepad__options li {
+    font-size: 12px;
+    margin-right: 9px;
+    color: black;
+}
+
+.notepad__scrollbar {
+    position: absolute;
+    bottom: 20px;
+    width: 96%;
+    height: 15px;
+    background: rgb(238, 238, 238);
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.notepad__scrollbar__vertical {
+    background: rgb(238, 238, 238);
+    width: 15px;
+    height: calc(96% - 69px);
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+
+.notepad__scrollbar__vertical i,
+.notepad__scrollbar i {
+    color: rgb(187, 187, 187);
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.notepad__fill {
+    width: 4%;
+    height: 15px;
+    background: rgb(238, 238, 238);
+    position: absolute;
+    right: 0;
+    border-bottom: 1px solid rgb(201, 201, 201);
+    bottom: 20px;
+}
+
+.notepad__scrollbar__vertical i:last-child {
+    bottom: 0;
+    position: absolute;
+    left: 0;
+}
+
+.notepad__text {
+    border: none;
+    width: 100%;
+    height: calc(100% - 85px);
+    position: absolute;
+    top: 50px;
+    resize: none;
+}
+
+.notepad__file-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgb(238, 238, 238);
+    height: 20px;
+}
+
+.notepad__file-info__info {
+    position: absolute;
+    right: -25px;  
+    bottom: 4px; 
+    width: 80%;
+    height: 20px;
+}
+
+
+.notepad__file-info__info li{
+    font-size: 10px;
+    padding: 4px;
+    border-left: 1px solid rgb(201, 201, 201);
+    color: black;
+}
+
+.notepad__scrollbar__icon-group {
+    position: absolute;
+    width: 100%;
+}
+
+.notepad__scrollbar__icon-group i:first-child {
+    position: absolute;
+    left: 0;
+}
+
+.notepad__scrollbar__icon-group i:last-child {
+    position: absolute;
+    right: 0;
+}
+
+@media (max-width: 1280px) {
+    .notepad {
+        display: block;
+    }
+}
