@@ -1,8 +1,13 @@
-<div class="notepad" [style.width]="width()+'px'" [style.height]="height()+'px'">
+<div class="notepad" [style.width]="width()+'%'" [style.height]="height()+'%'"
+[style.left]="left()+'%'"
+[style.right]="right()+'px'"
+[style.bottom]="bottom()+'px'"
+[style.top]="top()+'px'"
+>
 
     <div class="notepad__menu">
         <img alt="notepad icon" src="/assets/icons/notepad.png" />
-        <p class="notepad__menu__file-title">Presentation.txt - Notepad</p>
+        <p class="notepad__menu__file-title">{{filename()}} - Notepad</p>
         <div class="notepad__menu__window-options">
             <i class="codicon codicon-chrome-minimize"> </i>
             <i class="codicon codicon-chrome-maximize"> </i>
@@ -20,9 +25,7 @@
         </ul>
     </div>
 
-    <textarea class="notepad__text">
-        {{content()}}
-    </textarea>
+    <textarea class="notepad__text">{{content()}}</textarea>
 
     <div class="notepad__scrollbar__vertical">
         

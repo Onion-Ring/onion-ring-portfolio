@@ -1,7 +1,8 @@
 .notepad {
     display: none;    
     background: #fcfcfc;
-    position: relative;
+    position: absolute;
+    border: 0.7px solid rgb(233, 203, 72);
 }
 
 .notepad__menu {
@@ -101,10 +102,12 @@
 
 .notepad__text {
     border: none;
-    width: 100%;
+    width: 96%;
     height: calc(100% - 85px);
     position: absolute;
     top: 50px;
+    background: #fcfcfc;
+    text-align: left;
     resize: none;
 }
 
@@ -118,9 +121,9 @@
 
 .notepad__file-info__info {
     position: absolute;
-    right: -25px;  
+    right: 0px;  
     bottom: 4px; 
-    width: 80%;
+    
     height: 20px;
 }
 
