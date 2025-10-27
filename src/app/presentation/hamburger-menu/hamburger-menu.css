@@ -1,39 +1,43 @@
 .backdrop {
     width: 100vw;
     height: 100vh;
-    z-index: 50;
+    z-index: 100;
     top: 0;
     left: 0;
     position: fixed;
     animation: backdrop-fade 0.8s ease forwards;
+    
+}
+
+a{
+    text-decoration: none;
+    color: rgb(223, 223, 223) ;
 }
 
 
 .hamburger-menu {
-    z-index: 100;
+    z-index: 1000;
     position: absolute;
     width: 50%;
     left: 25%;
     top: 25%;
-    height: 50%;
+    height: 50%;        
 }
 
 .hamburger-menu__menu-options {
     padding: 8px;
     width: 100%;    
-    position: relative;
 }
 
 .hamburger-menu__menu-options__option {
-    display: block;    
+    display: block;
     position: relative;
     padding: 8px;
     font-size: 28px;
     text-align: center;
-    cursor: default;
-    color: rgb(197, 197, 197);
+    cursor: default;    
     margin: 10px;
-    animation: text-appear 0.8s ease forwards;    
+    animation: text-appear 0.8s ease forwards;
 }
 
 /* animations triggered once the hamburger menu is closed */
@@ -41,7 +45,7 @@
     animation: backdrop-fade-out 0.8s ease forwards;
 }
 
-.option-text-disappear {    
+.option-text-disappear {
     animation: text-disappear 0.8s ease forwards;
 }
 
@@ -64,6 +68,16 @@
 }
 
 
+@media (max-width: 1280px) {
+    .hamburger-menu__menu-options__option {
+        font-size: 26px;
+    }
+
+    .hamburger-menu__close-btn i {
+        font-size: 30px;
+    }
+}
+
 @keyframes font-color-change {
 
     from {
@@ -84,16 +98,16 @@
     }
 
     to {
-        background: rgba(0, 0, 0, 0.4);
+        background: rgba(0, 0, 0, 0.7);
         backdrop-filter: blur(4px);
     }
-    
+
 }
 
 @keyframes backdrop-fade-out {
 
     from {
-        background: rgba(0, 0, 0, 0.4);
+        background: rgba(0, 0, 0, 0.7);
         backdrop-filter: blur(4px);
     }
 
@@ -108,7 +122,7 @@
 @keyframes text-appear {
 
     to {
-        color: rgba(197, 197, 197, 0.8);
+        color: rgb(236, 236, 236);
     }
 
     from {

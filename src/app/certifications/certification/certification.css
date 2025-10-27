@@ -1,0 +1,56 @@
+.certification {
+    width: 40%;
+    background-color: rgba(30, 30, 30, 0.9);
+    position: relative;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    margin: 30px 25px 30px 25px;
+}
+
+.certification__header img{
+    width: 90px;
+    margin-bottom: 10px;
+}
+
+.certification__header a{
+    text-decoration: none;
+    color: rgb(187, 156, 97);
+    font-weight: bold;
+}
+
+
+.certification__header span {
+    color: rgb(153, 153, 153);
+    display: block;
+    text-align: left;
+}
+
+.certification__header h3{
+    color: rgb(223,223,223);
+    margin-bottom: 15px;
+}
+
+.certification__learned {
+
+    margin-top: 20px;
+    color: rgb(212, 212, 212);
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+
+.certification__learned__list {
+    margin-top: 20px;
+    color: rgb(212, 212, 212);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.certification__learned__list li {
+    display: list-item;
+    color: rgb(153, 153, 153);
+    font-size: 16px;
+    padding: 4px;
+    list-style-type: none;
+}

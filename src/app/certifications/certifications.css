@@ -1,0 +1,14 @@
+.certifications {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.certifications__header {
+    color: rgb(223, 223, 223);
+    padding: 5px;
+    text-align: center;
+    font-size: 36px;
+    margin: 60px 0 10px 0;
+}
+

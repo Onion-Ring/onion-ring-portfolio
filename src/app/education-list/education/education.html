@@ -1,0 +1,22 @@
+<h2 class="education-title">{{title()}}</h2>
+<hr class="education-separator"/>
+ 
+<div class="education-img-wrapper" (mouseover)="onMouseEnter()" (mouseout)="onMouseLeave()">
+    @if (isHovering()) {        
+        <p class="education-title-obtained"        
+        [style.animation-name]="'show'"
+        [style.animation-duration]="'1s'"
+        [style.animation-fill-mode]="'forwards'"
+        >{{titleObtained()}}</p>        
+    }@else if (wasHovered()){
+        <p class="education-title-obtained" 
+        [style.animation-name]="'show'" 
+        [style.animation-duration]="'0.7s'"
+        [style.animation-direction]="'reverse'"
+        [style.animation-fill-mode]="'forwards'">{{titleObtained()}}</p>
+    }
+
+    <img class="education-img" alt="Center img" src={{imagePath()}}  />
+</div>
+<h3 class="education-subtitle">Main Skills</h3>
+<ng-content select="p,ul, li, span"></ng-content>

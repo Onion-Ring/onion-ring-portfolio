@@ -1,0 +1,94 @@
+.tech-stack__group {
+    margin: 50px 0 50px 0;
+    text-align: center;
+    background-color: rgba(30, 30, 30, 0.9);
+    width: 40%;
+    vertical-align: top;    
+    margin: 25px;
+    display: inline-block;
+    left: 30%;
+    padding: 10px;
+    border-radius: 10px;    
+}
+
+
+
+.tech-stack__group__img {
+    display: inline-block;   
+    background-color: #cac5c2; 
+    border-radius: 5px;
+    margin: 30px 25px 30px 25px;
+    width: 100px;
+    height: 100px;          
+}
+
+.eclipse{
+    box-shadow: 0px 0px 12px #F7941E,0px 0px 24px #7755ff;
+}
+
+.pycharm{
+    box-shadow: 0px 0px 12px #21D789, 0px 0px 24px #fffb1b;
+}
+
+.csharp{
+    box-shadow: 0px 0px 24px #a15fd8;
+}
+
+.java{
+    box-shadow: 0px 0px 12px #E76F00,0px 0px 24px #41b3ff;
+}
+
+.mongodb{
+    box-shadow: 0px 0px 24px #4FAA41;
+}
+.red-shadow{
+    box-shadow: 0px 0px 24px rgb(255, 61, 61);
+}
+
+.python{
+    box-shadow: 0px 0px 12px #FFDD54,0px 0px 24px #2a9fff;
+}
+
+.github {
+    box-shadow: 0px 0px 24px #000;
+}
+
+.html5{
+    box-shadow: 0px 0px 24px #F16529;
+}
+
+.sass{
+    box-shadow: 0px 0px 24px #CB6699;
+}
+
+.angular{
+    box-shadow: 0px 0px 12px #FE31D0, 0px 0px 24px #7D09EF;
+}
+
+.js{
+    box-shadow: 0px 0px 24px #F0DB4F;
+}
+
+.blue-shadow{
+    box-shadow: 0px 0px 24px #1384C8;
+}
+
+
+.tech-stack__group__header {
+    color: rgb(223, 223, 223);
+    font-size: 24px;
+}
+
+.tech-stack__group img {
+    width: 100px;    
+    height: 100px;
+    padding: 20px;
+}
+
+@media (max-width: 815px) {
+
+    .tech-stack__group{
+        width: 80%;
+        left: 10%;
+    }
+}

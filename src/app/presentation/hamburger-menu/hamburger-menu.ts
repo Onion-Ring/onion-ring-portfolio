@@ -1,4 +1,4 @@
-import { Component, input, output, signal } from '@angular/core';
+import { Component, input, OnInit, output, signal } from '@angular/core';
 
 @Component({
   selector: 'app-hamburger-menu',
@@ -6,15 +6,21 @@ import { Component, input, output, signal } from '@angular/core';
   templateUrl: './hamburger-menu.html',
   styleUrl: './hamburger-menu.css'
 })
-export class HamburgerMenu {
+export class HamburgerMenu  {
 
   public fadeOutMenu = signal<boolean>(false);
   public hamburgerMenuClose = output<void>();
 
 
   onCloseHamburgerMenu() {
+    document.body.style.overflow = '';
     this.fadeOutMenu.set(true); 
     new Promise(resolve => setTimeout(resolve, 850)).then(() => { this.hamburgerMenuClose.emit(); });        
+  }
+
+  enableScroll(){
+    document.body.style.overflow = '';
+    this.onCloseHamburgerMenu();
   }
 
 }

@@ -2,12 +2,13 @@
 
 <div class="hamburger-menu" >
 
-    <ul class="hamburger-menu__menu-options">        
-        <li class="hamburger-menu__menu-options__option" [class.option-text-disappear]="fadeOutMenu()">Education</li>
-        <li class="hamburger-menu__menu-options__option" [class.option-text-disappear]="fadeOutMenu()">Tech Stack</li>
-        <li class="hamburger-menu__menu-options__option" [class.option-text-disappear]="fadeOutMenu()">My Projects</li>        
-        <li class="hamburger-menu__menu-options__option" [class.option-text-disappear]="fadeOutMenu()">Certifications</li>
-        <li class="hamburger-menu__menu-options__option" [class.option-text-disappear]="fadeOutMenu()">Work Experience</li>
+    <ul class="hamburger-menu__menu-options">     
+
+        <li class="hamburger-menu__menu-options__option" [class.option-text-disappear]="fadeOutMenu()"><a href="#education" (click)="enableScroll()">Education</a></li>
+        <li class="hamburger-menu__menu-options__option" [class.option-text-disappear]="fadeOutMenu()"><a href="#tech" (click)="enableScroll()">Tech Stack</a></li>
+        <li class="hamburger-menu__menu-options__option" [class.option-text-disappear]="fadeOutMenu()"><a href="#projects" (click)="enableScroll()">My Projects</a></li>        
+        <li class="hamburger-menu__menu-options__option" [class.option-text-disappear]="fadeOutMenu()"><a href="#certs" (click)="enableScroll()">Certifications</a></li>
+        <li class="hamburger-menu__menu-options__option" [class.option-text-disappear]="fadeOutMenu()"><a href="#work" (click)="enableScroll()">Work Experience</a></li>
     </ul>
 
 </div>

@@ -14,7 +14,7 @@
         <div class="avatar_section__wrapper">
 
             <div class="avatar_section__image">
-                <img alt="Profile avatar" src="/assets/new213.jpg">
+                <img alt="Profile avatar" src="/assets/profile.jpg">
             </div>
             <h1 class="avatar-section__title">Antonio Carrasco</h1>
             <p class="avatar-section__position">Full-Stack .NET Developer</p>
@@ -22,13 +22,27 @@
 
         </div>
     </div>
-    <!-- <div app-social-networks></div> -->
-
-    <app-notepad filename="presentation.txt" [width]="60" [height]="40" [left]="40" [top]="480" content="Hello! My name is Antonio, I'm a software developer always eager to learn about new technologies as well as to grow both personally and professionally."/>    
-    <app-notepad filename="experience.txt" [width]="70" [height]="45" [left]="5" [top]="630" content="I have over two years of experience developing and maintaining a .NET Web Forms application with a microservices architecture for a well-known American publishing company.
-
-During that time, I've had the opportunity to mentor interns, develop new features, and maintain and debug code, among other tasks." />
-    <app-notepad filename="about-this.txt" [width]="70" [height]="35" [left]="30" [top]="920" content="On this page, I'll briefly introduce the personal projects I'm working on and the technologies I have experience with." />
     
-    <app-vs-code />
+    
+    <app-notepad (clicked)="onNotepadClick($event)"         
+        [zIndex]="activeFile() === 'presentation.txt' ? 100 : 10"
+        filename="presentation.txt" [width]="60" [height]="40" [left]="40" [top]="480"
+        [content]="notepadContents[0]"
+        [column]="1" [line]="1" />
+
+    <app-notepad (clicked)="onNotepadClick($event)"         
+        [zIndex]="activeFile() === 'experience.txt' ? 100 : 10"
+        filename="experience.txt" [width]="70" [height]="45" [left]="5" [top]="630"
+        [content]="notepadContents[1]" [column]="1" [line]="1" />
+
+    <app-notepad (clicked)="onNotepadClick($event)"                 
+        [zIndex]="activeFile() === 'about-this.txt' ? 100 : 10"
+        filename="about-this.txt" [width]="70" [height]="35" [left]="30" [top]="860"
+        [content]="notepadContents[2]"
+        [column]="1" [line]="1" />
+
+    <app-vs-code />    
+    
+    
+        
 </header>

@@ -1,4 +1,8 @@
-<div class="notepad" [style.width]="width()+'%'" [style.height]="height()+'%'"
+<div class="notepad" 
+(click)="onNotepadClick()"
+[style.z-index]="zIndex()"
+[style.width]="width()+'%'" 
+[style.height]="height()+'%'"
 [style.left]="left()+'%'"
 [style.right]="right()+'px'"
 [style.bottom]="bottom()+'px'"
@@ -25,7 +29,9 @@
         </ul>
     </div>
 
-    <textarea class="notepad__text">{{content()}}</textarea>
+
+    <textarea       
+    class="notepad__text" readonly>{{content()}}</textarea>
 
     <div class="notepad__scrollbar__vertical">
         
@@ -46,7 +52,7 @@
         <div class="notepad__file-info__info">
             
                 <ul>
-                    <li>Line 1, column 1</li>
+                    <li>Line {{line}}, column {{column}}</li>
                     <li>100%</li>
                     <li>Windows(CRLF)</li>
                     <li>UTF-8</li>
