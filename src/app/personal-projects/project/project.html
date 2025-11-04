@@ -6,19 +6,19 @@
     @if (dropDownClicked()) {
 
         <div class="project__github appear">
-            <a [href]="repositoryLink()" target="_blank"><img src="/assets/icons/github.svg" alt="github-icon"></a>
+            <a [href]="repositoryLink()" target="_blank"><img src="./assets/icons/github.svg" alt="github-icon"></a>
             <p>View it on my Github!</p>
         </div>
     }@else if (alreadyClicked()){
         <div class="project__github disappear">
-            <a [href]="repositoryLink()" target="_blank"><img src="/assets/icons/github.svg" alt="github-icon"></a>
+            <a [href]="repositoryLink()" target="_blank"><img src="./assets/icons/github.svg" alt="github-icon"></a>
             <p>View it on my Github!</p>
         </div>
     }
 
     <h2 class="project__title">{{title()}}</h2>
 
-    <img class="project__logo-img" alt="" [src]="'/assets/projects-icons/'+imgFileName()" />
+    <img class="project__logo-img" alt="" [src]="'./assets/projects-icons/'+imgFileName()" />
 
     <ng-content select="p,div,h4"></ng-content>
 
