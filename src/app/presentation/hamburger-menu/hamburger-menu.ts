@@ -13,12 +13,14 @@ export class HamburgerMenu  {
 
 
   onCloseHamburgerMenu() {
+    document.documentElement.style.overflow = '';
     document.body.style.overflow = '';
     this.fadeOutMenu.set(true); 
     new Promise(resolve => setTimeout(resolve, 850)).then(() => { this.hamburgerMenuClose.emit(); });        
   }
 
   enableScroll(){
+    document.documentElement.style.overflow = '';
     document.body.style.overflow = '';
     this.onCloseHamburgerMenu();
   }

@@ -40,6 +40,9 @@ li:hover{
 body{
     background-color: rgb(20, 20, 20);    
     font-family: 'poppins', sans-serif;
+    
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 @keyframes resize-img {

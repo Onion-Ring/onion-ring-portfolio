@@ -72,7 +72,7 @@
     content: '';
     position: absolute;
     height: 99%;
-    width: 103%;
+    width: 100%;
     background-image: conic-gradient(from var(--angle), rgb(125, 125, 221), rgb(105, 105, 226), rgb(85, 85, 226), rgb(65, 65, 231), rgb(226, 190, 135), rgb(226, 190, 105), rgb(226, 130, 75), rgb(226, 110, 45), rgb(125, 125, 221));
     top: 48.4%;
     left: 50%;

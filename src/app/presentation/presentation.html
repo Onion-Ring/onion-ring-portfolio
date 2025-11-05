@@ -25,19 +25,19 @@
     
     
     <app-notepad (clicked)="onNotepadClick($event)"         
-        [zIndex]="activeFile() === 'presentation.txt' ? 100 : 10"
-        filename="presentation.txt" [width]="60" [height]="40" [left]="40" [top]="480"
+        [zIndex]="activeFile() === 'presentation.txt' ? 10 : 1"
+        filename="presentation.txt" [width]="85" [height]="15" [left]="13" [top]="480"
         [content]="notepadContents[0]"
         [column]="1" [line]="1" />
 
     <app-notepad (clicked)="onNotepadClick($event)"         
-        [zIndex]="activeFile() === 'experience.txt' ? 100 : 10"
-        filename="experience.txt" [width]="70" [height]="45" [left]="5" [top]="630"
+        [zIndex]="activeFile() === 'experience.txt' ? 10 : 1"
+        filename="experience.txt" [width]="80" [height]="20" [left]="5" [top]="650"
         [content]="notepadContents[1]" [column]="1" [line]="1" />
 
     <app-notepad (clicked)="onNotepadClick($event)"                 
-        [zIndex]="activeFile() === 'about-this.txt' ? 100 : 10"
-        filename="about-this.txt" [width]="70" [height]="35" [left]="30" [top]="860"
+        [zIndex]="activeFile() === 'about-this.txt' ? 10 : 1"
+        filename="about-this.txt" [width]="80" [height]="20" [left]="10" [top]="880"
         [content]="notepadContents[2]"
         [column]="1" [line]="1" />
 

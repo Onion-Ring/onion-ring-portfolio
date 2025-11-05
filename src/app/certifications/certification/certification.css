@@ -54,3 +54,11 @@
     padding: 4px;
     list-style-type: none;
 }
+
+@media (max-width: 740px) {
+
+    .certification{
+        width: 90%;
+    }
+
+}

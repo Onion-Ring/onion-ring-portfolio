@@ -26,6 +26,7 @@ export class Presentation {
 
   onOpenHamburgerMenu(): void {
     // Disable  scrolling
+    document.documentElement.style.overflow = 'hidden';
     document.body.style.overflow = 'hidden';
     this.isHamburgerMenuOpen.set(true);
   }

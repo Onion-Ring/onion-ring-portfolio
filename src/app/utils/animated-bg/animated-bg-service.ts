@@ -54,27 +54,33 @@ export class AnimatedBgService {
 
     let leftMinimum: number = 0;
     let leftMaximum: number = 0;
+    
+    
     let offsetWidth = document.body.offsetWidth;
 
     // Positioning the 10% of the elements at the right of the web
     if (this.randomIntFromInterval(1, 10) === 1) {
 
       if (this.elementToAdd.width < 60 || this.elementToAdd.width < 90) {
-        leftMinimum = this.randomIntFromInterval(offsetWidth * 0.8, offsetWidth * 0.85);
-        leftMaximum = this.randomIntFromInterval(offsetWidth * 0.87, offsetWidth * 0.9);
+        leftMinimum = this.randomIntFromInterval(offsetWidth * 0.7, offsetWidth * 0.8);
+        leftMaximum = this.randomIntFromInterval(offsetWidth * 0.85, offsetWidth * 0.9);
       } else {
         leftMinimum = this.randomIntFromInterval(offsetWidth * 0.6, offsetWidth * 0.7);
-        leftMaximum = this.randomIntFromInterval(offsetWidth * 0.75, offsetWidth * 0.85);
+        leftMaximum = this.randomIntFromInterval(offsetWidth * 0.75, offsetWidth * 0.8);
       }
 
     } else {
-      leftMinimum = this.randomIntFromInterval(0, 30);
-      leftMaximum = document.body.offsetWidth - 200;
+      leftMinimum = this.randomIntFromInterval(20, 40);
+      leftMaximum = document.body.offsetWidth - 300;
     }
 
     // From px to % in order to have more different results
     leftMinimum = (leftMinimum / document.body.offsetWidth) * 100;
-    leftMaximum = ((leftMaximum / document.body.offsetWidth) * 100) - 1.5; //This - 1.5 is to prevent the element to overflow the page width
+    leftMaximum = ((leftMaximum / document.body.offsetWidth) * 100);
+
+    if(leftMaximum > 70 && leftMaximum <= 80){
+      leftMaximum-=4;
+    }
 
     this.elementToAdd.left = this.randomIntFromInterval(leftMinimum, leftMaximum);
   }

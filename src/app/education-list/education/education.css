@@ -10,7 +10,7 @@
     
     display: inline-block;
     z-index: 10;
-    height: 730px;
+    height: 630px;
     border-radius: 5px;
 }
 
@@ -115,12 +115,50 @@
     margin-top: 20px;
 }
 
-.education-skills li {
-    list-style-type: none;
-    font-size: 16px;
-    padding: 4px;
-    display: list-item;
+
+
+.education-skills{
+    width: 96%;
+    position: relative;
+    left: 2%;
+    top: 3%;
 }
+
+.education-skills div{
+
+    display: inline-block;
+    background-color: #cac5c2;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.education-skills  img{ 
+    width: 50px;
+    height: 50px;
+    
+    margin: 10px 15px 10px 15px; 
+    
+}
+
+@media (max-width: 1300px) {
+
+    .education {
+        height: 700px;
+    }
+
+
+}
+
+
+@media (max-width: 1880px) {
+
+    .education {
+        height: 710px;
+    }
+
+
+}
+
 
 @media (max-width: 740px) {
 
@@ -160,5 +198,17 @@
         left: 0;
         
     }
+
+}
+
+@media (max-width: 500px) {
+
+    .education {
+            width: 100%;
+            top: -200px;
+            height: 740px;
+    
+            position: relative;
+        }
 
 }
