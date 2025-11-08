@@ -1,48 +1,30 @@
 $publishOnDist = $args[0]
 $projectFolderName = Split-Path -Leaf (Get-Location)
 $configFolder = ""
+$buildPath = ""
+$buildPathDestination = ""
 
 Write-Output "=========================================="
 Write-Output "Welcome to the Angular project build tool!"
 Write-Output "=========================================="
 
-
 if ($publishOnDist -eq $true -Or -Not $publishOnDist) 
 {
     Write-Output "Publishing on /dist folder"   
-    Write-Output ""
-    $configFolder = "\dist\"
+    Write-Output ""    
+    $buildPath = ".\dist\"+$projectFolderName+"\browser"
+    $buildPathDestination =".\dist\"+$projectFolderName
     ng build --configuration production --base-href $projectFolderName
-
 }else
 {
     Write-Output "Publishing on /docs folder"    
-    Write-Output ""
-    $configFolder = "\docs\"
+    Write-Output ""    
+    $buildPath = ".\docs\browser"
+    $buildPathDestination = ".\docs\"
     ng build --configuration docs --base-href $projectFolderName
 }
 
-
-$buildPath = ""
-$buildPathDestination = ""
-
-#I generate different paths depending on the configuration
-if($configFolder -eq "\docs\"){
-    #For docs, the path is different than /dist path so there are two possible cases
-    $buildPath = "."+$configFolder+"browser"
-    $buildPathDestination = "."+$configFolder    
-
-}else{
-    $buildPath = "."+$configFolder+$projectFolderName+"\browser"
-    $buildPathDestination ="."+$configFolder+$projectFolderName    
-}
-
-Write-Output $buildPath
-Write-Output $buildPathDestination
-
-
 $validPath = Test-Path -Path $buildPath
-
 
 #If the project is build on /browser folder (angular version 17 or higher), we need to move the files and folders inside this folder in order to publish it correctly
 if($validPath -eq $true) 
