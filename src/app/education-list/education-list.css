@@ -40,4 +40,9 @@
         height: 1800px;
     }
 
+                .education-list__wrapper {
+                    width:90%;
+                    left: 5%;
+                }
+
 }

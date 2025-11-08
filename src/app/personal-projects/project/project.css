@@ -1,12 +1,11 @@
 .project {
     width: 40%;
-
     background-color: rgba(30, 30, 30, 0.9);
     position: relative;
     border-radius: 10px;
     padding: 10px;
     display: inline-block;
-    margin: 30px 25px 30px 25px;
+    margin: 25px 0px 25px 0px;
 }
 
 .project__title {
@@ -36,14 +35,17 @@
 }
 
 .project__techs-used img {
-   width: 70px;
-   height: 70px;
-   margin-top: 15px;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 20px;
+    
+    
 }
 
 .project__group__img {
     display: inline-block;
-    background-color: #b6b6b6;
+    background-color: #cac5c2;
     border-radius: 5px;
     margin: 30px 25px 30px 25px;
     width: 100px;
@@ -55,25 +57,25 @@
     font-size: 20px;
 }
 
-.project__github__link{
+.project__github__link {
     border: none;
     background: none;
-    position:absolute;
+    position: absolute;
     width: 40px;
-    height:40px;
+    height: 40px;
     left: 5px;
     top: 5px;
-    border-radius: 10px;    
+    border-radius: 10px;
 }
 
-.project__github__link i{
+.project__github__link i {
     font-size: 35px !important;
-    color: #ad6f3b;        
+    color: #ad6f3b;
 }
 
 
 
-.project__github__link i:hover{
+.project__github__link i:hover {
     animation: pulse 1s infinite alternate;
 }
 
@@ -90,28 +92,28 @@
 
 .project__github img {
     width: 60px;
-    
+
     left: 0;
 }
 
 @keyframes pulse {
-    from{
-        
+    from {
+
         color: #ad6f3b;
     }
 
-    to{
-        
+    to {
+
         color: #5c70c5;
     }
 }
 
 
-.appear{
+.appear {
     animation: appear 1s forwards;
 }
 
-.disappear{
+.disappear {
     animation: appear 1s forwards reverse;
 }
 

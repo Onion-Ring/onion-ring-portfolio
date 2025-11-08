@@ -204,11 +204,10 @@
 @media (max-width: 500px) {
 
     .education {
-            width: 100%;
-            top: -200px;
+            
             height: 740px;
     
-            position: relative;
+            
         }
 
 }

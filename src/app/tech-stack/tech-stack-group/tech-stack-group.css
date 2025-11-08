@@ -4,7 +4,7 @@
     background-color: rgba(30, 30, 30, 0.9);
     width: 40%;
     vertical-align: top;    
-    margin: 25px;
+    margin: 25px 0 25px 0;
     display: inline-block;
     left: 30%;
     padding: 10px;
@@ -89,7 +89,6 @@
 @media (max-width: 815px) {
 
     .tech-stack__group{
-        width: 90%;
-        left: 10%;
+        width: 90%;        
     }
 }
