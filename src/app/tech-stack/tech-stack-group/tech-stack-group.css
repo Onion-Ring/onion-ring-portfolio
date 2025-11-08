@@ -74,7 +74,6 @@
     box-shadow: 0px 0px 24px #1384C8;
 }
 
-
 .tech-stack__group__header {
     color: rgb(223, 223, 223);
     font-size: 24px;
@@ -88,11 +87,10 @@
 
 @media (max-width: 815px) {
 
-
-
     .tech-stack__group{
         width: 90%;   
         margin-left: 0px;     
         margin-right: 0px;
     }
+
 }
