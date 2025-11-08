@@ -1,4 +1,5 @@
 $publishOnDist = $args[0]
+#Gets current path folder name
 $projectFolderName = Split-Path -Leaf (Get-Location)
 $configFolder = ""
 $buildPath = ""
@@ -11,8 +12,9 @@ Write-Output "=========================================="
 if ($publishOnDist -eq $true -Or -Not $publishOnDist) 
 {
     Write-Output "Publishing on /dist folder"   
-    Write-Output ""    
-    $buildPath = ".\dist\"+$projectFolderName+"\browser"
+    Write-Output ""  
+    #When we build on /dist, a folder with the project name is created.  
+    $buildPath = ".\dist\"+$projectFolderName+"\browser" 
     $buildPathDestination =".\dist\"+$projectFolderName
     ng build --configuration production --base-href $projectFolderName
 }else
