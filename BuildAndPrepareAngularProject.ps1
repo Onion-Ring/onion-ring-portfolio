@@ -1,48 +1,24 @@
-$projectPath = $args[0]
-$publishOnDist = $args[1]
-$projectFolderName =  "/"+$args[2]+"/"
+$publishOnDist = $args[0]
+$projectFolderName = Split-Path -Leaf (Get-Location)
 $configFolder = ""
 
 Write-Output "=========================================="
 Write-Output "Welcome to the Angular project build tool!"
 Write-Output "=========================================="
 
-$validPath = Test-Path -Path $projectPath
-
-if ($validPath -eq $false)
-{        
-    Write-Output ""
-    Write-Output "ERROR: " $projectPath "Is an invalid path, try again."
-    Write-Output ""
-    Exit
-}
-
-if(-Not $projectFolderName -Or $projectFolderName -eq "") 
-{
-    Write-Output ""
-    Write-Output "ERROR: You should specify the project folder name."
-    Write-Output ""
-    Exit
-}
-
-Write-Output ""
-Write-Output "The path provided was valid, changing location to:" $projectPath
-Write-Output ""
-
-Set-Location $projectPath
 
 if ($publishOnDist -eq $true -Or -Not $publishOnDist) 
 {
     Write-Output "Publishing on /dist folder"   
     Write-Output ""
-    $configFolder = "\dist"
+    $configFolder = "\dist\"
     ng build --configuration production --base-href $projectFolderName
 
 }else
 {
     Write-Output "Publishing on /docs folder"    
     Write-Output ""
-    $configFolder = "\docs"
+    $configFolder = "\docs\"
     ng build --configuration docs --base-href $projectFolderName
 }
 
@@ -51,15 +27,19 @@ $buildPath = ""
 $buildPathDestination = ""
 
 #I generate different paths depending on the configuration
-if($configFolder -eq "\docs"){
+if($configFolder -eq "\docs\"){
     #For docs, the path is different than /dist path so there are two possible cases
-    $buildPath = $projectPath+$configFolder+"\browser"
-    $buildPathDestination = $projectPath+$configFolder    
+    $buildPath = "."+$configFolder+"browser"
+    $buildPathDestination = "."+$configFolder    
 
 }else{
-    $buildPath = $projectPath+$configFolder+$projectFolderName+"browser"
-    $buildPathDestination = $projectPath+$configFolder+$projectFolderName
+    $buildPath = "."+$configFolder+$projectFolderName+"\browser"
+    $buildPathDestination ="."+$configFolder+$projectFolderName    
 }
+
+Write-Output $buildPath
+Write-Output $buildPathDestination
+
 
 $validPath = Test-Path -Path $buildPath
 
