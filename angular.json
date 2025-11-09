@@ -54,7 +54,7 @@
             },
             "docs":{
               "outputPath": "docs/",
-              "baseHref": "/onion-ring-portfolio/"          
+              "baseHref": "/"          
             }
           },
           "defaultConfiguration": "production"
