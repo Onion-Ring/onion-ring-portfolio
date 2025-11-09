@@ -53,8 +53,7 @@
               "sourceMap": true
             },
             "docs":{
-              "outputPath": "docs/",
-              "baseHref": "/"          
+              "outputPath": "docs/"                 
             }
           },
           "defaultConfiguration": "production"
