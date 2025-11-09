@@ -23,7 +23,8 @@ if ($publishOnDist -eq $true -Or -Not $publishOnDist)
     Write-Output ""    
     $buildPath = ".\docs\browser"
     $buildPathDestination = ".\docs\"
-    ng build --configuration docs --base-href $projectFolderName+"\"
+    $projectFolderName = "\"+$projectFolderName+"\"
+    ng build --configuration docs --base-href $projectFolderName
 }
 
 $validPath = Test-Path -Path $buildPath
