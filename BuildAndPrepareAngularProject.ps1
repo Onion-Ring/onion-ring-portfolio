@@ -16,7 +16,7 @@ if ($publishOnDist -eq $true -Or -Not $publishOnDist)
     #When we build on /dist, a folder with the project name is created.  
     $buildPath = ".\dist\"+$projectFolderName+"\browser" 
     $buildPathDestination =".\dist\"+$projectFolderName
-    ng build --configuration production --base-href $projectFolderName+"\"
+    ng build --configuration production --base-href "\"$projectFolderName"\"
 }else
 {
     Write-Output "Publishing on /docs folder"    
