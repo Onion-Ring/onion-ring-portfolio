@@ -1,6 +1,6 @@
 $publishOnDist = $args[0]
 #Gets current path folder name
-$projectFolderName = Split-Path -Leaf (Get-Location)
+$projectFolderName = Split-Path -Leaf (Get-Location) + "\"
 $configFolder = ""
 $buildPath = ""
 $buildPathDestination = ""
