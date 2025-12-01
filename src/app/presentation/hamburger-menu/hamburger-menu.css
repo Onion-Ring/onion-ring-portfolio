@@ -37,20 +37,17 @@ a {
     text-align: center;
     cursor: default;
     margin: 10px;
-    animation: text-appear 0.8s ease forwards;
 }
+
+
 
 /* animations triggered once the hamburger menu is closed */
 .backdrop-fade-out-menu {
     animation: backdrop-fade-out 0.8s ease forwards;
 }
 
-.option-text-disappear {
-    animation: text-disappear 0.8s ease forwards;
-}
-
-.hamburger-menu__menu-options__option:hover {
-    animation: font-color-change 1s infinite alternate;
+.option-text-disappear>a {
+    animation: text-disappear 0.8s ease;
 }
 
 .hamburger-menu__close-btn i {
@@ -76,18 +73,6 @@ a {
     .hamburger-menu__close-btn i {
         font-size: 30px;
     }
-}
-
-@keyframes font-color-change {
-
-    from {
-        color: rgb(230, 183, 97);
-    }
-
-    to {
-        color: rgb(73, 119, 216);
-    }
-
 }
 
 @keyframes backdrop-fade {
@@ -121,13 +106,17 @@ a {
 
 @keyframes text-appear {
 
+
+    from {
+        color: rgba(236, 236, 236, 0);
+    }
+
+
     to {
         color: rgb(236, 236, 236);
     }
 
-    from {
-        color: rgba(197, 197, 197, 0);
-    }
+
 
 }
 
@@ -135,7 +124,7 @@ a {
 @keyframes text-disappear {
 
     from {
-        color: rgba(197, 197, 197, 0.8);
+        color: rgb(236, 236, 236);
     }
 
     to {
