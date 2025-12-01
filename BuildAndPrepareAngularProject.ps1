@@ -9,22 +9,22 @@ Write-Output "=========================================="
 Write-Output "Welcome to the Angular project build tool!"
 Write-Output "=========================================="
 
+$projectFolderName = "\"+$projectFolderName+"\"
+
 if ($publishOnDist -eq $true -Or -Not $publishOnDist) 
 {
     Write-Output "Publishing on /dist folder"   
     Write-Output ""  
     #When we build on /dist, a folder with the project name is created.  
     $buildPath = ".\dist\"+$projectFolderName+"\browser" 
-    $buildPathDestination =".\dist\"+$projectFolderName
-    $projectFolderName = "\"+$projectFolderName+"\"
+    $buildPathDestination =".\dist\"+$projectFolderName    
     ng build --configuration production --base-href $projectFolderName
 }else
 {
     Write-Output "Publishing on /docs folder"    
     Write-Output ""    
     $buildPath = ".\docs\browser"
-    $buildPathDestination = ".\docs\"
-    $projectFolderName = "\"+$projectFolderName+"\"
+    $buildPathDestination = ".\docs\"    
     ng build --configuration docs --base-href $projectFolderName
 }
 
