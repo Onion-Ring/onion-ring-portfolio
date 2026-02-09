@@ -4,6 +4,7 @@
     height: 640px;
     width: calc(100% - 240px);
     background-color: #242424;
+    border-right: 1px solid #474747;
 }
 
 .vs-code-ui__file-visualizer__files-open {

@@ -9,8 +9,7 @@ import { Component, input, output, signal, ViewEncapsulation } from '@angular/co
 })
 export class Education {
 
-  public title = input.required<string>();
-  public imagePath = input.required<string>();
+  public title = input.required<string>();  
   public titleObtained = input.required<string>();
   public wasHovered = signal<boolean>(false);
   public isHovering = signal<boolean>(false);

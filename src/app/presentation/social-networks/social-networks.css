@@ -3,6 +3,7 @@
     right: 3px;
     top: 45%;
     z-index: 10;
+    text-align: center;
 }
 
 .social-networks__container{
@@ -17,12 +18,14 @@
 
 .social-networks__container__item:last-child {
     border-bottom-left-radius: 10px;
-    background-color: rgb(226, 226, 226);
+    background-color: rgb(220, 220, 220);
     margin-top: -1px;
 }
 
 .social-networks__container__item img {
-    width: 60px;                
+    width: 60px;      
+    position: relative;
+    top: 3px;
 }
 
 .social-networks__container__item img:hover{

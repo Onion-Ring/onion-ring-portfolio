@@ -1,10 +1,12 @@
 .vs-code-ui__console {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 240px;
     width: calc(100% - 240px);
     height: 230px;
     background-color: #1f1f1f;
+    border-bottom: 1px solid #474747;
+    border-right: 1px solid #474747;
 }
 
 .vs-code-ui__console__console-tabs {

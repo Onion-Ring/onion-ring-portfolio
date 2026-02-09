@@ -5,6 +5,7 @@
     padding: 4px;
     position: absolute;
     top: 31px;
+    border-bottom: 1px solid #474747;
 }
 
 .vs-code-ui__right-menu__options {

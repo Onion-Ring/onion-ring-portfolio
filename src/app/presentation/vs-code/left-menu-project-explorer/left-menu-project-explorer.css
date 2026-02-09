@@ -55,6 +55,14 @@
     width: 100%;
 }
 
+.outline-timeline>div:first-child {
+    border-top: 1px solid #474747;
+}
+
+.outline-timeline > div{
+    border-bottom: 1px solid #474747;
+}
+
 .outline-timeline p,
 .outline-timeline i {
     display: inline;
