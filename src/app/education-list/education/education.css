@@ -1,16 +1,44 @@
 .education {
-    width: 100%;        
-    padding: 15px;
+    width: 90%;        
+    padding: 25px;
     margin: auto;    
     margin: 100px 0 100px 0;
     top: 0;        
-    z-index: 10;    
-    border-radius: 5px;
+    z-index: 10;        
+    margin-left: 5%;    
+    border: 1px solid #4e4e4e;
+    background: #35353528;
 }
 
 
 .education-skills img {
     width: 35px;
+}
+
+.education-knowledge li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.25em;    
+    width: 20px;
+    height: 20px;
+    background-image: url("../../../assets/icons/arrow-narrow-right.svg");
+    background-size: contain;
+    background-position: -2px -3px ; 
+    background-repeat: no-repeat;
+}
+
+.education-knowledge li{
+    font-size: 15px;   
+    padding-left: 25px; 
+    position: relative;
+    display: list-item;
+    color: aliceblue;    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style:none;
+    margin-left: 0;
+    text-align: left;
 }
 
 .education-separator {
@@ -28,36 +56,7 @@
 
 }
 
-.education-img {
-    border-radius: 20px;
-    width: 100%;
-    height: 170px;
-    border-top: 2.5px solid rgb(224, 187, 118);
-    border-left: 2.5px solid rgb(224, 187, 118);
-    border-right: 2.5px solid rgb(118, 160, 224);
-    border-bottom: 2.5px solid rgb(118, 160, 224);
-    margin-top: 5px;
 
-}
-
-.education-title-obtained {
-    border-radius: 20px;
-    border-top: 2.5px solid rgb(224, 187, 118);
-    border-left: 2.5px solid rgb(224, 187, 118);
-    border-right: 2.5px solid rgb(118, 160, 224);
-    border-bottom: 2.5px solid rgb(118, 160, 224);
-    width: 100%;
-    padding: 0;
-    height: 170px;
-    position: absolute;
-    top: 4px;
-    text-align: center;
-    z-index: 10;
-    backdrop-filter: blur(10px);
-    color: rgb(228, 228, 228);
-    padding: 9px;
-    background-color: rgba(61, 61, 61, 0.7);
-}
 
 @keyframes show {
 
@@ -94,7 +93,7 @@ iframe {
     
 }
 
-.education-mark,.education-subtitle,.education-skills,iframe{
+.education-mark,.education-subtitle,.education-skills,iframe,.education-knowledge{
     margin-left: 4%;
 }
 
@@ -110,6 +109,7 @@ iframe {
 .education-subtitle {
     font-size: 22px;
     padding: 5px;
+    padding-left: 0;
     text-align: left;
     color: rgb(190, 190, 190);
     letter-spacing: 2px;
@@ -120,32 +120,30 @@ iframe {
 
 
 
-.education-skills{
-    
+.education-skills{    
     text-align: left;
-    width: 35%;        
+    width: 50%;        
 }
 
 .education-skills div{
     height: 80px;
     width: 80px;
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 10px;
     background-color: #cac5c2;
-    margin: 10px;
+    margin: 15px 15px 15px 0;
     border-radius: 5px;
 }
 
-.education-skills div:first-child {
-    margin-left: 0;
-}
+
 
 
 .education-skills  img{ 
     width: 50px;
-    height: 50px;
-    
-    margin: 15px; 
-    
+    height: 50px;    
+    margin: 15px;     
 }
 
 @media (max-width: 1300px) {
