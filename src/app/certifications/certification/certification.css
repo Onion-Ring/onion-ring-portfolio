@@ -1,11 +1,11 @@
 .certification {
-    width: 40%;
-    background-color: rgba(30, 30, 30, 0.9);
-    position: relative;
-    border-radius: 10px;
-    padding: 10px;
+    width: 90%;
+    background: #1b1f24a1;
+    position: relative;    
+    padding: 25px;
+    border: 1px solid #2E343D;
     display: inline-block;
-    margin: 25px 0px 25px 0px;
+    margin: 100px 0 100px 0;
 }
 
 .certification__header img{

@@ -83,7 +83,7 @@ a {
     }
 
     to {
-        background: rgba(0, 0, 0, 0.7);
+        background: #2328308c;
         backdrop-filter: blur(4px);
     }
 
@@ -92,7 +92,7 @@ a {
 @keyframes backdrop-fade-out {
 
     from {
-        background: rgba(0, 0, 0, 0.7);
+        background: #2328308c;
         backdrop-filter: blur(4px);
     }
 

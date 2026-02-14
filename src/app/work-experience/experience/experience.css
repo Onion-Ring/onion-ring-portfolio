@@ -1,13 +1,9 @@
 .experience {
-    background-color: rgba(30, 30, 30, 0.9);    
-    width: 40%;
-    margin-left: 30%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    /* position: absolute; */
-    padding: 10px;
-    border-radius: 10px;
-    text-align: center;
+    background: #1b1f24a1;
+    width: 90%;    
+    margin: 100px 0 100px 5%;
+    border: 1px solid #2E343D;
+    padding: 25px;        
 }
 
 .experience h3 {

@@ -18,31 +18,3 @@
     font-size: 36px;
     margin: 60px 0 10px 0;
 }
-
-@media (max-width: 1480px) {
-    .education-list__wrapper {
-        width: 60%;
-        left: 20%;
-    }
-
-}
-
-@media (max-width: 1050px) {
-    .education-list__wrapper {
-        width: 80%;
-        left: 10%;
-    }
-
-}
-
-@media (max-width: 740px) {
-    .education-list{
-        height: 1800px;
-    }
-
-                .education-list__wrapper {
-                    width:90%;
-                    left: 5%;
-                }
-
-}

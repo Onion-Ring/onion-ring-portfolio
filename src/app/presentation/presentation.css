@@ -53,6 +53,7 @@
 .avatar_section__image {
     z-index: 10;
     width: 200px;
+    
     margin-top: 40px;
     margin-left: 50px;
     margin-right: 50px;
@@ -61,6 +62,7 @@
 
 .avatar_section__image img {
     width: 200px;
+    filter: saturate(110%) brightness(115%);
     border-radius: 50px;
 }
 
@@ -71,9 +73,19 @@
 .avatar_section__image::before {
     content: '';
     position: absolute;
-    height: 99%;
-    width: 100%;
-    background-image: conic-gradient(from var(--angle), rgb(125, 125, 221), rgb(105, 105, 226), rgb(85, 85, 226), rgb(65, 65, 231), rgb(226, 190, 135), rgb(226, 190, 105), rgb(226, 130, 75), rgb(226, 110, 45), rgb(125, 125, 221));
+    height: 97.5%;
+    
+    width: 102%;
+    background-image: conic-gradient(from var(--angle),
+            rgb(90, 10, 16),
+            rgb(120, 16, 24),
+            rgb(150, 20, 30),
+            rgb(170, 20, 30),
+            rgb(131, 122, 87),            
+            rgb(173, 163, 123),
+            rgb(209, 196, 151),
+            rgb(211, 199, 157),
+            rgb(90, 10, 16));
     top: 48.4%;
     left: 50%;
     translate: -50% -50%;

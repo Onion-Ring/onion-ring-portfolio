@@ -10,11 +10,11 @@
 @keyframes blue-orange-pulse {
 
     from{
-        background-color: rgba(65, 65, 231, 0.6);
+        background-color: #8b7f5b;
     }
 
     to{
-        background-color: rgba(226, 110, 45, 0.6);
+        background-color: #693a3a;
     }
     
 }

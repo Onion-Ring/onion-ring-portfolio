@@ -12,13 +12,14 @@
 }
 
 .social-networks__container__item:first-child{
-    background-color: rgb(235, 235, 235);
+    
+    background-color: rgb(180, 173, 146);
     border-top-left-radius: 10px;
 }
 
 .social-networks__container__item:last-child {
     border-bottom-left-radius: 10px;
-    background-color: rgb(220, 220, 220);
+    background-color: rgb(155, 150, 128);
     margin-top: -1px;
 }
 
