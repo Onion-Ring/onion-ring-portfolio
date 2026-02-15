@@ -8,6 +8,11 @@
     margin: 100px 0 100px 0;
 }
 
+.certification h2{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
 .certification__header img{
     width: 90px;
     margin-bottom: 10px;
@@ -15,45 +20,62 @@
 
 .certification__header a{
     text-decoration: none;
-    color: rgb(187, 156, 97);
+    color: #ad4040;
     font-weight: bold;
 }
 
 
 .certification__header span {
-    color: rgb(153, 153, 153);
+    font-size: 18px;
+        letter-spacing: 2px;
+        text-align: left;
     display: block;
     text-align: left;
 }
 
 .certification__header h3{
-    color: rgb(223,223,223);
+    
     margin-bottom: 15px;
 }
 
 .certification__learned {
 
     margin-top: 20px;
-    color: rgb(212, 212, 212);
-    font-size: 20px;
+    text-align: left;
     margin-bottom: 20px;
 
+}
+
+
+.certification__learned__list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.25em;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../../assets/icons/arrow-narrow-right.svg");
+    background-size: contain;
+    background-position: -2px -3px;
+    background-repeat: no-repeat;
 }
 
 .certification__learned__list {
-    margin-top: 20px;
-    color: rgb(212, 212, 212);
-    font-size: 20px;
-    margin-bottom: 20px;
+    width: 100%;
 }
 
 .certification__learned__list li {
+    padding-left: 25px;
+    position: relative;
     display: list-item;
-    color: rgb(153, 153, 153);
-    font-size: 16px;
-    padding: 4px;
-    list-style-type: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style: none;
+    margin-left: 0;
+    text-align: left;
 }
+
+
 
 @media (max-width: 740px) {
 

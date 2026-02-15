@@ -1,38 +1,39 @@
 .education {
-    width: 90%;        
+    width: 90%;
     padding: 25px;
-    min-height: 600px;
-    margin: auto;    
+    min-height: 650px;
+    max-height: 1200px;
+    margin: auto;
     margin: 100px 0 100px 0;
-    top: 0;        
-    z-index: 10;        
+    top: 0;
+    z-index: 10;
     position: relative;
-    margin-left: 5%;    
+    margin-left: 5%;
     border: 1px solid #2E343D;
-    background: #1b1f24a1;     
+    background: #1b1f24a1;
 }
 
-.education  hr {
-    border:1px solid #919191;
+.education hr {
+    border: 1px solid #2E343D;
     height: 250px;
     position: absolute;
-    left:calc((100% - 2px) / 2 );
-    top: calc(13% + 125px );
+    left: calc((100% - 2px) / 2);
+    top: calc(13% + 125px);
 }
 
 .education-center-logo {
-    border-radius: 10px;                
+    border-radius: 10px;
     width: 140px;
     margin-left: 0;
-    height: 140px;    
+    height: 140px;
 }
 
 
-.yellow{
+.yellow {
     color: #b4a655;
 }
 
-.green{
+.green {
     color: #88b455;
 }
 
@@ -45,69 +46,51 @@
     content: "";
     position: absolute;
     left: 0;
-    top: 0.25em;    
+    top: 0.25em;
     width: 20px;
     height: 20px;
     background-image: url("../../../assets/icons/arrow-narrow-right.svg");
     background-size: contain;
-    background-position: -2px -3px ; 
+    background-position: -2px -3px;
     background-repeat: no-repeat;
 }
 
-.education-knowledge{
+.education-knowledge {
     width: 100%;
 }
 
-.education-knowledge li{
-    font-size: 15px;   
-    padding-left: 25px; 
+.education-knowledge li {
+    padding-left: 25px;
     position: relative;
     display: list-item;
-    color: aliceblue;    
     margin-top: 10px;
     margin-bottom: 10px;
-    list-style:none;
+    list-style: none;
     margin-left: 0;
     text-align: left;
 }
 
-.education-separator {
-    width: 70%;
-    margin: auto;
-    border: none;
-    background-color: rgb(209, 136, 75);
-    height: 0.7px;
-    margin-bottom: 20px;
-}
-
-.education:last-child {
-    top: 0;
-    right: 0;
-
-}
-
-
-.education-main-info{
+.education-main-info {
     position: absolute;
     left: 5%;
     top: 13%;
-    height: 500px;    
-    width: 45%;
-}
-
-.education-obtained-at{
-    position: absolute;
-    top: 13%;    
     height: 500px;
-    right:5%;
     width: 45%;
 }
 
-.education-obtained-at h3{    
+.education-obtained-at {
+    position: absolute;
+    top: 13%;
+    height: 500px;
+    right: 5%;
+    width: 45%;
+}
+
+.education-obtained-at h3 {
     text-align: center;
 }
 
-.education-obtained-at > span {
+.education-obtained-at>span {
     width: 100%;
     margin-left: 0;
     margin-top: 0;
@@ -129,6 +112,11 @@
 
 }
 
+.education-mark>span {
+    font-size: 22px;
+
+}
+
 .education-mark {
     text-align: left;
     padding: 3px;
@@ -137,23 +125,22 @@
     font-size: 22px;
     font-style: italic;
     text-decoration: underline;
-    color: #c9c9c9;            
     margin-top: 20px;
     display: block;
 }
 
-iframe {        
-    width: 90%;    
+iframe {
+    width: 90%;
     height: 170px;
     margin-top: 20px;
-    margin-bottom: 20px;     
+    margin-bottom: 20px;
 }
 
 .education-title {
     padding: 10px;
     font-size: 28px;
     text-align: left;
-    color: rgb(223, 223, 223);
+
     word-spacing: 3px;
     letter-spacing: 3px;
 }
@@ -163,34 +150,34 @@ iframe {
     padding: 5px;
     padding-left: 0;
     text-align: left;
-    color: rgb(190, 190, 190);
+
     letter-spacing: 2px;
     margin-top: 20px;
     margin-bottom: 20px;
-    
+
 }
 
 
 
-.education-skills{    
+.education-skills {
     text-align: left;
-    width: 80%;        
+    width: 80%;
 }
 
-.education-skills div{
+.education-skills div {
     height: 80px;
     width: 80px;
-    display: inline-flex;        
+    display: inline-flex;
     gap: 10px;
     background-color: #cac5c2;
     margin: 15px 15px 15px 0;
     border-radius: 5px;
 }
 
-.education-skills  img{ 
+.education-skills img {
     width: 50px;
-    height: 50px;    
-    margin: 15px;     
+    height: 50px;
+    margin: 15px;
 }
 
 @media (max-width: 740px) {
@@ -224,7 +211,7 @@ iframe {
 
     .education-title-obtained {
         left: 0;
-        
+
     }
 
 }

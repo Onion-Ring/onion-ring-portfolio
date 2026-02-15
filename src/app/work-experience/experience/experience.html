@@ -1,8 +1,8 @@
 <div class="experience">    
-    <h3 class="experience__header">{{title()}}</h3>
+    <h2 class="experience__header">{{title()}}</h2>
     <span><a target="_blank" [href]="companyLink()">{{companyName()}}</a> - {{employmentType()}}</span>
     <span>{{startDate | date:'longDate'}} -- {{endDate | date:'longDate'}}</span>
     <span>{{modality()}}</span>    
-    <h4>Main Tasks:</h4>
+    <h3>Main Tasks:</h3>
     <ng-content select="ol"></ng-content>
 </div>

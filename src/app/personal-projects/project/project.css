@@ -9,23 +9,29 @@
     margin: 100px 0 100px 0;
 }
 
+.project h2{
+    font-size: 28px;    
+}
+
+.project h3{
+    font-size: 26px;
+}
+
 .project__title {
-    text-align: center;
-    color: rgb(223, 223, 223);
+    text-align: center;    
     font-size: 25px;
     margin-top: 10px;
 }
 
 .project__visit{
-    margin: 15px 0 15px 0;
-        color: rgb(223, 223, 223);
-            font-size: 20px;
+    margin: 15px 0 15px 0;               
 }
+
 
 .project__visit a{
     text-decoration: none;
-        color: rgb(187, 156, 97);
-        font-weight: bold;
+    color: #ad4040;
+    font-weight: bold;
 }
 
 .project__logo-img {
@@ -41,11 +47,7 @@
     text-align: center;
 }
 
-.project__techs-used h4 {
 
-    color: rgb(223, 223, 223);
-    margin-bottom: 20px;
-}
 
 .project__techs-used img {
     width: 60px;
@@ -65,10 +67,11 @@
     height: 100px;
 }
 
-.project__description {
-    color: rgb(223, 223, 223);
+.project__description,.project__visit p  {    
     font-size: 20px;
 }
+
+
 
 .project__github__link {
     border: none;
@@ -83,23 +86,19 @@
 
 .project__github__link i {
     font-size: 35px !important;
-    color: #ad6f3b;
+    color: #ad4040;
+    font-weight: bold;
 }
 
-
-
-.project__github__link i:hover {
-    animation: pulse 1s infinite alternate;
-}
 
 .project__github {
-    width: 150px;
-    color: rgb(223, 223, 223);
+    width: 150px;    
     position: absolute;
     top: 45px;
     border-radius: 5px;
     left: 15px;
-    background: rgb(133, 84, 39);
+    padding: 10px;
+    background: #2E343D;
 
 }
 
@@ -108,19 +107,6 @@
 
     left: 0;
 }
-
-@keyframes pulse {
-    from {
-
-        color: #ad6f3b;
-    }
-
-    to {
-
-        color: #5c70c5;
-    }
-}
-
 
 .appear {
     animation: appear 1s forwards;
