@@ -2,12 +2,26 @@
 
     <div class="certification__header">
         <h2>{{title()}}</h2>
-        <img [src]="'./assets/icons/'+learningPlatform()+'.svg'" alt="learning platform icon">        
-        <span>Issued {{issued()}}</span>  
-        <span>Credential ID: <a target="_blank" [href]="'https://www.udemy.com/certificate/'+credentialId()+'/'"> {{credentialId()}} </a></span>
+    </div>
+
+
+
+    <div class="certification-obtained">
+        <h3 class="certification__learned">Obtained on:</h3>
+        <img [src]="'./assets/icons/'+learningPlatform()+'.svg'" alt="learning platform icon">
+        <div>
+            <span>Issued {{issued()}}</span>
+            <span>Credential ID: <a target="_blank" [href]="'https://www.udemy.com/certificate/'+credentialId()+'/'"> {{credentialId()}} </a></span>
+        </div>
+            
     </div>
 
     <h3 class="certification__learned">What I've learned</h3>
+
+    <img [src]="'../../../assets/certs/'+certImg()" alt="a" class="cert-img"/>
+
     <ng-content select="ol"></ng-content>
-        
+
+
+
 </div>

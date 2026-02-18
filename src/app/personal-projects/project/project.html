@@ -1,24 +1,23 @@
 <div class="project">
 
-    <button class="project__github__link" (click)="onDropDownClicked()"><i
-            [class]="dropDownClicked() ? 'codicon codicon-chevron-up' : 'codicon codicon-chevron-down' "></i></button>
 
-    @if (dropDownClicked()) {
 
-        <div class="project__github appear">
-            <a [href]="repositoryLink()" target="_blank"><img src="./assets/icons/github.svg" alt="github-icon"></a>
-            <p>View it on my Github!</p>
+
+
+
+    <div class="project-img-container">
+        <img class="project__logo-img" alt="" [src]="'./assets/projects-icons/'+imgFileName()" />
+
+
+
+        <div class="project__github">
+            <a [href]="repositoryLink()" target="_blank"><p>See the repository by clicking this link :)</p></a>
+            
         </div>
-    }@else if (alreadyClicked()){
-        <div class="project__github disappear">
-            <a [href]="repositoryLink()" target="_blank"><img src="./assets/icons/github.svg" alt="github-icon"></a>
-            <p>View it on my Github!</p>
-        </div>
-    }
+    </div>
+
 
     <h2 class="project__title">{{title()}}</h2>
-
-    <img class="project__logo-img" alt="" [src]="'./assets/projects-icons/'+imgFileName()" />
 
     <ng-content select="p,div,h4"></ng-content>
 

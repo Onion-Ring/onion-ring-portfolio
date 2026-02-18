@@ -1,8 +1,25 @@
 <div class="experience">    
-    <h2 class="experience__header">{{title()}}</h2>
-    <span><a target="_blank" [href]="companyLink()">{{companyName()}}</a> - {{employmentType()}}</span>
-    <span>{{startDate | date:'longDate'}} -- {{endDate | date:'longDate'}}</span>
-    <span>{{modality()}}</span>    
-    <h3>Main Tasks:</h3>
-    <ng-content select="ol"></ng-content>
+    
+    <a target="_blank" href="{{companyLink()}}" > <img [src]="'../../../assets/companies/'+companyName().replace(' ','')+'.jpg'" class="experience-logo"  alt="Company Logo"/>
+
+    <h2 class="experience__header">{{title()}}</h2></a>
+    <div class="experience-job-info"> 
+        <h3><a target="_blank" href="{{companyLink()}}"  >{{companyName()}}</a></h3>
+        <span>{{employmentType()}}</span>
+
+        @if(endDate === ""){
+            <span>{{startDate | date:'longDate'}} -- Present</span>
+        }@else{
+            <span>{{startDate | date:'longDate'}} -- {{endDate | date:'longDate'}}</span>
+        }
+            
+        <span>{{modality()}}</span>    
+    </div>
+        
+
+
+    <div class="experience-main-tasks">
+        <h3>Main Tasks:</h3>
+        <ng-content select="ol"></ng-content>
+    </div>
 </div>

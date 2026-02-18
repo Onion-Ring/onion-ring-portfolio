@@ -13,5 +13,6 @@ export class Certification {
   issued = input.required<string>();
   credentialId = input.required<string>();
   learningPlatform = input.required<string>();
+  certImg = input.required<string>();
 
 }

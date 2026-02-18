@@ -4,11 +4,13 @@
     margin: 100px 0 100px 5%;
     border: 1px solid #2E343D;
     padding: 25px;        
+    position: relative;
+    min-height: 450px;
 }
 
 .experience h2 {    
     margin-bottom: 15px;    
-    text-align: left;
+    text-align: center;
 }
 
 .experience span {    
@@ -26,9 +28,9 @@
 }
 
 .experience a {
-    text-decoration: none;
-    color: #ad4040;
+    text-decoration: none;    
     font-weight: bold;
+    color: rgb(155, 150, 128);
 }
 
 .experience li::before {
@@ -55,4 +57,19 @@
     list-style: none;
     margin-left: 0;
     text-align: left;
+}
+
+.experience-main-tasks,.experience-job-info{
+    position: absolute;
+    width: 40%;
+    top: 45%;
+}
+
+.experience-main-tasks{
+    right: 5%;
+}
+
+.experience-logo{
+    width: 70px;
+    border-radius: 10px;
 }

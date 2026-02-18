@@ -17,10 +17,10 @@ export class Experience implements AfterContentChecked{
   companyLink = input.required<string>();
   today = new Date();
   startDate :string = "";
-  endDate: string = "";
+  endDate: string = "";  
 
   ngAfterContentChecked(): void {
     this.startDate = this.intervalDates!().split("-")[0]; 
-    this.endDate =  this.intervalDates!().split("-")[1];  
+    this.endDate =  this.intervalDates!().split("-")[1];      
   }
 }

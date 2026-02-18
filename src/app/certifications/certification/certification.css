@@ -1,40 +1,46 @@
 .certification {
     width: 90%;
     background: #1b1f24a1;
-    position: relative;    
+    position: relative;
     padding: 25px;
     border: 1px solid #2E343D;
     display: inline-block;
     margin: 100px 0 100px 0;
 }
 
-.certification h2{
+.certification h2 {
     text-align: left;
     margin-bottom: 20px;
 }
 
-.certification__header img{
-    width: 90px;
-    margin-bottom: 10px;
+
+.certification-obtained > div {
+    margin-top: 110px;
 }
 
-.certification__header a{
+.certification-obtained img {
+    width: 180px;
+    position: absolute;
+    left: 25px;
+}
+
+.certification a {
     text-decoration: none;
     color: #ad4040;
     font-weight: bold;
 }
 
 
-.certification__header span {
+.certification span {
     font-size: 18px;
-        letter-spacing: 2px;
-        text-align: left;
+    letter-spacing: 2px;
+    text-align: left;
     display: block;
     text-align: left;
 }
 
-.certification__header h3{
-    
+.certification__header h3 {
+
     margin-bottom: 15px;
 }
 
@@ -46,6 +52,16 @@
 
 }
 
+.cert-img{
+    width:35%;
+    
+    position: absolute;
+    left: 60%;
+    filter: contrast(75%);
+    top: 100px;
+    box-shadow: 10px 5px 36px 4px #A435F0;
+    border-radius: 5px;
+}
 
 .certification__learned__list li::before {
     content: "";
@@ -79,7 +95,7 @@
 
 @media (max-width: 740px) {
 
-    .certification{
+    .certification {
         width: 90%;
     }
 

@@ -1,4 +1,6 @@
 .project {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     width: 90%;
     left: 5%;    
     background: #1b1f24a1;
@@ -17,10 +19,13 @@
     font-size: 26px;
 }
 
+
+
 .project__title {
     text-align: center;    
     font-size: 25px;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .project__visit{
@@ -35,9 +40,30 @@
 }
 
 .project__logo-img {
-    width: 150px;
-    margin-top: 10px;
+    width: calc(100% + 50px);    
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-left: -25px;
+    margin-top: -25px;
+    transition: .5s ease;
 }
+
+.project-img-container{
+    position: relative;
+}
+
+.project-img-container:hover img {
+    opacity: 0.2;
+    
+}
+
+.project-img-container:hover .project__github{
+    opacity: 1;
+}
+.project__github a{
+    text-decoration: none;
+}
+
 
 .project__techs-used {
     width: 90%;
@@ -60,7 +86,7 @@
 
 .project__group__img {
     display: inline-block;
-    background-color: #cac5c2;
+    background-color: #c7c7c7;
     border-radius: 5px;
     margin: 30px 25px 30px 25px;
     width: 100px;
@@ -74,13 +100,12 @@
 
 
 .project__github__link {
-    border: none;
-    background: none;
+    
+    background: #1b1f24a1;
     position: absolute;
     width: 40px;
     height: 40px;
-    left: 5px;
-    top: 5px;
+    left: 0;
     border-radius: 10px;
 }
 
@@ -93,12 +118,16 @@
 
 .project__github {
     width: 150px;    
-    position: absolute;
-    top: 45px;
+    position: absolute;    
+    top: 50%;
     border-radius: 5px;
-    left: 15px;
+    left: 50%;
+    opacity: 0;
+    transition: .5s ease;
     padding: 10px;
     background: #2E343D;
+    border:1px solid #686355;
+    transform: translate(-50%, -50%);
 
 }
 
@@ -108,25 +137,6 @@
     left: 0;
 }
 
-.appear {
-    animation: appear 1s forwards;
-}
-
-.disappear {
-    animation: appear 1s forwards reverse;
-}
-
-@keyframes appear {
-    from {
-
-        opacity: 0;
-    }
-
-    to {
-
-        opacity: 1;
-    }
-}
 
 @media (max-width:770px) {
     .project__techs-used img {

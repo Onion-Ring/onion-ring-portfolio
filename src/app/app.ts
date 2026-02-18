@@ -1,7 +1,7 @@
 import { AfterContentInit, Component } from '@angular/core';
 import { Presentation } from "./presentation/presentation";
 import { EducationList } from "./education-list/education-list";
-import { AnimatedBg } from './utils/animated-bg/animated-bg';
+
 import { TechStack } from "./tech-stack/tech-stack";
 import { PersonalProjects } from "./personal-projects/personal-projects";
 import { Certifications } from "./certifications/certifications";
@@ -10,7 +10,7 @@ import { SocialNetworks } from "./presentation/social-networks/social-networks";
 
 @Component({
   selector: 'app-root',
-  imports: [Presentation, EducationList, AnimatedBg, TechStack, PersonalProjects, Certifications, WorkExperience, SocialNetworks],
+  imports: [Presentation, EducationList, TechStack, PersonalProjects, Certifications, WorkExperience, SocialNetworks],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

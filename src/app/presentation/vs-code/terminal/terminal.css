@@ -76,6 +76,9 @@
 
 .vs-code-ui__console__consoles__console span {
     margin-left: 6px;
+    font-size: 13px;
+    color: #d4d4d4;
+
 }
 
 .vs-code-ui__console__consoles__console i {
@@ -92,12 +95,12 @@
     left: 0;
 }
 
-.vs-code-ui__console__options-menu__scroll-bar{
+.vs-code-ui__console__options-menu__scroll-bar {
     width: 20px;
     height: 100%;
     position: absolute;
     top: 0;
-    right: 0;    
+    right: 0;
     border-top: 1px solid black;
     border-left: 1px solid black;
 }
