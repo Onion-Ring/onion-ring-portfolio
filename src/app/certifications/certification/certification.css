@@ -2,7 +2,7 @@
     width: 90%;
     background: #1b1f24a1;
     position: relative;
-    padding: 25px;
+    padding: 25px;    
     border: 1px solid #2E343D;
     display: inline-block;
     margin: 100px 0 100px 0;
@@ -14,7 +14,7 @@
 }
 
 
-.certification-obtained > div {
+.certification-obtained>div {
     margin-top: 110px;
 }
 
@@ -52,13 +52,12 @@
 
 }
 
-.cert-img{
-    width:35%;
-    
+.cert-img {
+    width: 600px;
     position: absolute;
-    left: 60%;
+    left: calc(96% - 600px);
     filter: contrast(75%);
-    top: 100px;
+    top: 15%;
     box-shadow: 10px 5px 36px 4px #A435F0;
     border-radius: 5px;
 }
@@ -92,11 +91,66 @@
 }
 
 
+@media (max-width: 1570px) {
+    .cert-img {
+        width: 500px;
+        left: calc(96% - 500px);
+    }
+}
 
-@media (max-width: 740px) {
+@media (max-width: 1440px) {
+    .cert-img {
+        width: 400px;
+        left: calc(96% - 400px);
+    }
+}
 
-    .certification {
-        width: 90%;
+
+@media (max-width: 1300px) {
+    .cert-img {
+        position: relative;
+        width: 50%;
+        left: 0;
+        margin-top: 30px;
+
     }
 
+    .certification-obtained {
+
+        width: 100%;
+        top: 60%;
+
+    }
+
+    .certification-obtained h3,
+    .certification-obtained span,
+    .certification__learned,
+    .certification__learned__list li {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .certification__learned__list li::before {
+
+        display: none;
+    }
+
+
+    .certification-obtained img {
+        margin-left: 0;
+        left: 0;
+        width: 20%;
+        margin-left: 40%;
+
+    }
+}
+
+@media (max-width: 950px) {
+    .cert-img {
+
+        width: 70%;
+
+
+
+    }
 }

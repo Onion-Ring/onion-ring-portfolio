@@ -1,14 +1,12 @@
 .education {
     width: 90%;
     padding: 25px;
-    min-height: 650px;
-    max-height: 1200px;
+    height: 800px;
     margin: auto;
     margin: 100px 0 100px 0;
     top: 0;
-    z-index: 10;
     position: relative;
-    margin-left: 5%;    
+    left: 5%;
     border: 1px solid #2E343D;
     background: #1b1f24a1;
 }
@@ -18,7 +16,7 @@
     height: 250px;
     position: absolute;
     left: calc((100% - 2px) / 2);
-    top: calc(13% + 125px);
+    top: calc(35% + 125px);
 }
 
 .education-center-logo {
@@ -68,14 +66,14 @@
 .education-main-info {
     position: absolute;
     left: 5%;
-    top: 13%;
+    top: 35%;
     height: 500px;
     width: 40%;
 }
 
 .education-obtained-at {
     position: absolute;
-    top: 13%;
+    top: 35%;
     height: 500px;
     right: 5%;
     width: 40%;
@@ -110,6 +108,10 @@
 .education-mark>span {
     font-size: 22px;
 
+}
+
+.education-main-info h3 {
+    text-align: center;
 }
 
 .education-mark {
@@ -154,59 +156,128 @@ iframe {
 
 
 
-.education-skills {
-    text-align: left;
-    width: 90%;
-}
+
 
 .education-skills div {
+    display: inline-block;
+    background-color: #c7c7c7;
+    margin: 15px;
+    border-radius: 5px;
     height: 80px;
     width: 80px;
-    display: inline-flex;
-    gap: 10px;
-    background-color: #c7c7c7;
-    margin: 15px 15px 15px 0;
-    border-radius: 5px;
 }
+
+
+
 
 .education-skills img {
     width: 50px;
     height: 50px;
-    margin: 15px;
+    margin-top: 15px;
 }
 
-@media (max-width: 740px) {
+
+.education-main-skills {
+    width: 80%;
+    left: 10%;
+    position: absolute;
+    top: 10%;
+}
+
+.center {
+    text-align: center;
+}
 
 
+@media (max-width:960px) {
 
-    .education-img,
-    .education-title-obtained {
-        width: 70%;
-        height: 200px;
+    .education hr {
+        display: none;
     }
 
-    .education-title-obtained {
-        left: 65px;
-        top: 5px;
+    .education-main-skills {
+        top: 8%;
     }
 
-    .education-subtitle {
-        margin-top: 50px;
+    .education {
+        height: 1380px;
     }
+
+    .education-main-info,
+    .education-obtained-at {
+        width: 90%;
+        position: relative;
+        margin-bottom: 80px;
+        top: 16%;
+        left: 5%;
+        height: 300px;
+    }
+
+
 
 }
 
-@media (max-width:690px) {
-
-    .education-img,
-    .education-title-obtained {
-        width: 100%;
-        height: 200px;
+@media (max-width:793px) {
+    .education-main-skills {
+        top: 10%;
     }
 
-    .education-title-obtained {
-        left: 0;
+    .education-center-logo {
+        width: 90px;
+        height: 90px;
+    }
+
+    .education-main-info,
+    .education-obtained-at {
+        top: 25%;
+    }
+}
+
+
+@media (max-width:650px) {
+    .education-title {
+        font-size: 24px;
+    }
+
+    .education-main-skills {
+        top: 10%;
+    }
+
+    .education-main-info,
+    .education-obtained-at {
+        top: 23%;
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width:500px) {
+
+    .education-main-info,
+    .education-obtained-at {
+        top: 22%;
+        margin-bottom: 140px;
+    }
+}
+
+@media (max-width:465px) {
+
+    .education-main-info li,
+    .education-obtained-at span {
+        font-size: 16px;
+    }
+
+    .education-title {
+        font-size: 20px;
+    }
+
+    .education-main-info,
+    .education-obtained-at {
+        top: 32%;
+        margin-bottom: 110px;
 
     }
 
+    .education {
+        height: 1460px;
+    }
 }

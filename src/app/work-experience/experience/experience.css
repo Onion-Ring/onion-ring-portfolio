@@ -62,7 +62,10 @@
 .experience-main-tasks,.experience-job-info{
     position: absolute;
     width: 40%;
-    top: 45%;
+    top: 40%;
+}
+.experience-job-info{
+    left: 5%;
 }
 
 .experience-main-tasks{
@@ -72,4 +75,62 @@
 .experience-logo{
     width: 70px;
     border-radius: 10px;
+}
+
+@media (max-width:1500px) {
+
+    .experience{
+        height: 600px;
+    }
+
+        .experience-main-tasks,
+        .experience-job-info {
+            top: 45%;
+        }
+
+}
+
+@media (max-width:1120px) {
+
+.experience-main-tasks,
+    .experience-job-info {
+        width: 100%;
+        position: relative;
+        top: 3%;
+        left: 0;        
+        margin: 0;
+        margin-bottom: 30px;
+
+    }
+
+    .experience li::before { display: none;}
+
+    .experience-main-tasks h3, .experience-job-info h3, .experience-job-info span, .experience-main-tasks li{
+        text-align: center;
+    }
+    
+
+}
+
+@media (max-width:800px) 
+{
+
+    .experience{
+        height: 650px;
+    }
+
+}
+
+
+@media (max-width:460px)
+{
+    .experience{
+        height: 700px;
+    }
+
+        .experience-job-info span,
+        .experience-main-tasks li{
+            font-size: 15px;
+        }
+
 }

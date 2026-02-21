@@ -116,10 +116,10 @@
 }
 
 
-.project__github {
-    width: 150px;    
+.project__github {    
     position: absolute;    
     top: 50%;
+    width: 70%;
     border-radius: 5px;
     left: 50%;
     opacity: 0;
@@ -135,16 +135,4 @@
     width: 60px;
 
     left: 0;
-}
-
-
-@media (max-width:770px) {
-    .project__techs-used img {
-        width: 60px;
-        margin: 0 20px 0 20px;
-    }
-
-    .project {
-        width: 90%;
-    }
 }
