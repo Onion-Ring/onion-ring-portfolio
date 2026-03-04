@@ -7,12 +7,12 @@
 .presentation {
     height: 930px;
     position: relative;
-    z-index: 10;        
+    
 }
 
 .avatar_section {
     width: 20%;
-    z-index: 10;    
+    
     position: absolute;
     right: 0;
     height: 930px;
