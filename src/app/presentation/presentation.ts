@@ -20,7 +20,7 @@ export class Presentation {
 
   constructor(){
     this.notepadContents.push("Hello! My name is Antonio, I'm a software developer always eager to learn about new technologies as well as to grow both personally and professionally.");
-    this.notepadContents.push("I have over two years of experience developing and maintaining a .NET Web Forms application with a microservices architecture for a well-known American publishing company.\n\nDuring that time, I've had the opportunity to mentor interns, develop new features, and maintain and debug code, among other tasks.");
+    this.notepadContents.push("I have over three years of experience developing and maintaining .NET applications and working with SQL Server databases. My main responsibilities include developing new features and maintaining legacy code.\n\nI also have experience mentoring interns, working with teams from different countries and working under pressure.");
     this.notepadContents.push("On this page, I'll briefly introduce the personal projects I'm working on and the technologies I have experience with.");
   }
 
