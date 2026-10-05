@@ -53,7 +53,7 @@
 .avatar_section__image {
     z-index: 10;
     width: 200px;
-    
+    font-size: 16px;
     margin-top: 40px;
     margin-left: 50px;
     margin-right: 50px;
@@ -71,7 +71,7 @@
 
 .avatar_section__image::after,
 .avatar_section__image::before {
-    content: '';
+    content: '';    
     position: absolute;
     height: 97.5%;
     
@@ -96,21 +96,21 @@
 }
 
 .avatar_section__image::before {
-    filter: blur(1.2rem);
+    filter: blur(25px);
     opacity: 0.9;
 }
 
 .avatar-section__title {
     color: rgb(235, 235, 235);
     margin: 15px 0 15px 0;
-    font-size: 30px;    
+    font-size: 2rem;    
     font-weight: 100;
 }
 
 .avatar-section__position {
-    color: rgb(235, 235, 235);
-    font-size: 17px;    
-    
+    color: rgb(167, 167, 167);
+    font-weight: bold;
+    font-size: 1.3rem;        
 }
 
 

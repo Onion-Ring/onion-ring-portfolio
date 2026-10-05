@@ -134,20 +134,16 @@ iframe {
 }
 
 .education-title {
-    padding: 10px;
-    font-size: 28px;
+    padding: 10px;    
     text-align: left;
-
     word-spacing: 3px;
     letter-spacing: 3px;
 }
 
-.education-subtitle {
-    font-size: 22px;
+.education-subtitle {    
     padding: 5px;
     padding-left: 0;
     text-align: left;
-
     letter-spacing: 2px;
     margin-top: 20px;
     margin-bottom: 20px;
