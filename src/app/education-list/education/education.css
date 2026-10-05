@@ -105,11 +105,6 @@
 
 }
 
-.education-mark>span {
-    font-size: 22px;
-
-}
-
 .education-main-info h3 {
     text-align: center;
 }
@@ -118,8 +113,7 @@
     text-align: left;
     padding: 3px;
     border-radius: 5px;
-    width: 150px;
-    font-size: 22px;
+    width: 150px;    
     font-style: italic;
     text-decoration: underline;
     margin-top: 20px;
