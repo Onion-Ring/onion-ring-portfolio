@@ -17,6 +17,7 @@
     width: 30%;    
     position: absolute;
     top: 0;
+    font-size: 14px;
     left: -8px;
 }
 
@@ -54,6 +55,7 @@
     border-radius: 5px;
     border: 1.5px rgb(99, 99, 99) solid;
     height: 22px;
+    font-size: 13px;
     position: absolute;
     background-color: #303030;
     top: 3.6px;
@@ -79,6 +81,7 @@
 .vs-code-ui__navbar__search-search-icon {
     position: absolute;
     top: 1.5px;
+    width: 24px;
     left: 44.3%;
     transform: scaleX(-1);
     z-index: 10;
@@ -87,19 +90,20 @@
 .vs-code-ui__navbar__search__search-input::placeholder {
     color: rgb(192, 192, 192);
     text-align: center;
+    font-size: 13px;
 }
 
 /* layout menu */
 .vs-code-ui__navbar__layout {
-    width: 9%;
+    width: 140px;
     right: 7%;
     position: absolute;
+    font-size: 16px;
     top: 4px;
 }
 
 .vs-code-ui__navbar__layout i {
-    padding: 4px;
-    margin-left: -6px;
+    padding: 2px;
 }
 
 
@@ -119,6 +123,7 @@
 
 .vs-code-ui__navbar__window-options-minimize {
     position: absolute;
+    width: 26px;
     top: -7px;
     right: 72px;
 }
@@ -126,8 +131,10 @@
 .vs-code-ui__navbar__window-options-close {
     position: absolute;
     right: 0;
+    width: 26px;
     top: 0;
-    height: 100%;
+    font-size: 26px;
+    
 }
 
 .vs-code-ui__navbar__window-options-close:hover {
