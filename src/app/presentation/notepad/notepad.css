@@ -15,6 +15,7 @@
 
 .notepad__menu>img {
     width: 45px;
+    font-size: 12px;
     position: absolute;
     left: -10px;
     top: -6px;
@@ -30,6 +31,7 @@
 .notepad__menu__window-options {
     position: absolute;
     right: 9px;
+    font-size: 16px;
 }
 
 .notepad__menu__window-options i {
@@ -42,16 +44,17 @@
 .notepad__options {
     position: absolute;
     top: 30px;
-    width: 100%;
+    width: 100%;    
     
     height: 20px;
     border-bottom: 2px solid rgb(224, 224, 224);
 }
 
 
-.notepad__options ul {
+.notepad__options ul {    
     position: relative;
-    bottom: 4px;
+    height: 25px;
+    font-size: 12px;
 }
 
 .notepad__options li, .notepad__file-info__info li{
@@ -84,6 +87,7 @@
     height: calc(96% - 73px);
     position: absolute;
     right: 0;
+    font-size: 13px;
     top: 50px;
 }
 
@@ -119,6 +123,7 @@
     position: absolute;
     padding: 10px;
     top: 50px;
+    font-size: 13.3px;
     background: #fcfcfc;
     text-align: left;
     resize: none;
@@ -127,6 +132,7 @@
 .notepad__file-info {
     position: absolute;
     bottom: 0;
+    
     width: 100%;
     background: rgb(238, 238, 238);
     height: 20px;
@@ -135,9 +141,12 @@
 .notepad__file-info__info {
     position: absolute;
     right: 0px;  
-    bottom: 4px; 
-    
+    bottom: 1px; 
     height: 20px;
+}
+
+.notepad__file-info__info ul{
+    font-size: 12px;
 }
 
 .notepad__file-info__info li{
