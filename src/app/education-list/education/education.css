@@ -124,10 +124,6 @@ iframe {
 
 }
 
-
-
-
-
 .education-skills div {
     display: inline-block;
     background-color: #c7c7c7;
@@ -136,9 +132,6 @@ iframe {
     height: 100px;
     width: 100px;
 }
-
-
-
 
 .education-skills img {
     width: 100px;
@@ -163,6 +156,12 @@ iframe {
         display: none;
     }
 
+
+                  .education-knowledge li {
+                      margin-left: 0rem;
+                      text-align: center;
+                      list-style: none;
+                  }
     .education-all-info{
         display: block;
     }
@@ -196,7 +195,7 @@ iframe {
         top: 10%;
     }
 
-
+  
 }
 
 
@@ -207,6 +206,8 @@ iframe {
     .education-obtained-at span {
         font-size: 16px;
     }
+
+
 
     .education-title {
         font-size: 20px;
