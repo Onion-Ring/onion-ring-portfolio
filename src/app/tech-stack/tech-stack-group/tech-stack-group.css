@@ -1,22 +1,25 @@
 .tech-stack__group {        
     background: #1b1f24a1;
-    width: 90%;    
-    vertical-align: top;    
+    width: 90%;        
     margin: 50px 0 50px 0;
     display: inline-block;    
     padding: 25px;    
     border: 1px solid #2E343D;
 }
 
-
-
 .tech-stack__group__img {
-    display: inline-block;   
+    display: inline-flex;       
     background-color: #c7c7c7; 
     border-radius: 5px;
     margin: 30px 25px 30px 25px;
     width: 100px;
     height: 100px;          
+}
+
+.tech-stack__group img {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
 }
 
 .eclipse{
@@ -71,11 +74,7 @@
     box-shadow: 0px 0px 24px #1384C8;
 }
 
-.tech-stack__group img {
-    width: 100px;    
-    height: 100px;
-    padding: 20px;
-}
+
 
 @media (max-width: 815px) {
 

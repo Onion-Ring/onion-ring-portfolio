@@ -1,22 +1,18 @@
 .education {
     width: 90%;
-    padding: 25px;
-    height: 800px;
+    padding: 1.5rem;      
     margin: auto;
-    margin: 100px 0 100px 0;
-    top: 0;
-    position: relative;
-    left: 5%;
+    margin: 100px 0 100px 0;        
+    margin-left: 5%;
     border: 1px solid #2E343D;
     background: #1b1f24a1;
 }
 
+
 .education hr {
     border: 1px solid #2E343D;
-    height: 250px;
-    position: absolute;
-    left: calc((100% - 2px) / 2);
-    top: calc(35% + 125px);
+    height: 250px;        
+    margin-top: 100px;
 }
 
 .education-center-logo {
@@ -35,48 +31,32 @@
     width: 35px;
 }
 
-.education-knowledge li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0.25em;
-    width: 20px;
-    height: 20px;
-    background-image: url("../../../assets/icons/arrow-narrow-right.svg");
-    background-size: contain;
-    background-position: -2px -3px;
-    background-repeat: no-repeat;
-}
-
 .education-knowledge {
     width: 100%;
 }
 
 .education-knowledge li {
-    padding-left: 25px;
-    position: relative;
-    display: list-item;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    list-style: none;
-    margin-left: 0;
+    margin-top: 2rem;
+    list-style-image: url("../../../assets/icons/arrow-narrow-right.svg");
+    margin-bottom: 2rem;    
+    margin-left: 5rem;
     text-align: left;
 }
 
-.education-main-info {
-    position: absolute;
-    left: 5%;
-    top: 35%;
-    height: 500px;
-    width: 40%;
+
+.education-all-info {
+    display: flex;
+    width: 100%;
 }
 
-.education-obtained-at {
-    position: absolute;
-    top: 35%;
-    height: 500px;
-    right: 5%;
-    width: 40%;
+.education-main-info{
+    width: 50%;
+    
+}
+
+.education-obtained-at {                
+    width: 50%;
+    
 }
 
 .education-obtained-at h3 {
@@ -121,7 +101,7 @@
 }
 
 iframe {
-    width: 100%;
+    width: 85%;
     height: 170px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -153,25 +133,23 @@ iframe {
     background-color: #c7c7c7;
     margin: 15px;
     border-radius: 5px;
-    height: 80px;
-    width: 80px;
+    height: 100px;
+    width: 100px;
 }
 
 
 
 
 .education-skills img {
-    width: 50px;
-    height: 50px;
-    margin-top: 15px;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
 }
 
 
 .education-main-skills {
     width: 80%;
-    left: 10%;
-    position: absolute;
-    top: 10%;
+    margin-left: 10%;
 }
 
 .center {
@@ -179,31 +157,25 @@ iframe {
 }
 
 
-@media (max-width:960px) {
+@media (max-width:1200px) {
 
     .education hr {
         display: none;
     }
 
-    .education-main-skills {
-        top: 8%;
+    .education-all-info{
+        display: block;
     }
 
-    .education {
-        height: 1380px;
+    .education-main-info, .education-obtained-at{
+        width: 100%;
+        margin: 0;
     }
 
-    .education-main-info,
-    .education-obtained-at {
-        width: 90%;
-        position: relative;
-        margin-bottom: 80px;
-        top: 16%;
-        left: 5%;
-        height: 300px;
-    }
+        iframe {
 
-
+            width: 90%;
+        }
 
 }
 
@@ -212,15 +184,6 @@ iframe {
         top: 10%;
     }
 
-    .education-center-logo {
-        width: 90px;
-        height: 90px;
-    }
-
-    .education-main-info,
-    .education-obtained-at {
-        top: 25%;
-    }
 }
 
 
@@ -233,21 +196,10 @@ iframe {
         top: 10%;
     }
 
-    .education-main-info,
-    .education-obtained-at {
-        top: 23%;
-        margin-bottom: 100px;
-    }
+
 }
 
-@media (max-width:500px) {
 
-    .education-main-info,
-    .education-obtained-at {
-        top: 22%;
-        margin-bottom: 140px;
-    }
-}
 
 @media (max-width:465px) {
 
@@ -260,14 +212,4 @@ iframe {
         font-size: 20px;
     }
 
-    .education-main-info,
-    .education-obtained-at {
-        top: 32%;
-        margin-bottom: 110px;
-
-    }
-
-    .education {
-        height: 1460px;
-    }
 }

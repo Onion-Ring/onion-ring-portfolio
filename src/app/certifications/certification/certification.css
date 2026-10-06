@@ -20,8 +20,8 @@
 
 .certification-obtained img {
     width: 180px;
-    position: absolute;
-    left: 25px;
+        
+    float: left;
 }
 
 .certification a {
@@ -116,10 +116,11 @@
     }
 
     .certification-obtained {
+        width: 100%;        
+    }
 
-        width: 100%;
-        top: 60%;
-
+    .certification-obtained img{
+        float: none;
     }
 
     .certification-obtained h3,
@@ -135,22 +136,14 @@
         display: none;
     }
 
+        .certification-obtained>div {
+            margin-top: 0px;
+        }
 
-    .certification-obtained img {
-        margin-left: 0;
-        left: 0;
-        width: 20%;
-        margin-left: 40%;
-
-    }
 }
 
 @media (max-width: 950px) {
     .cert-img {
-
         width: 70%;
-
-
-
     }
 }
