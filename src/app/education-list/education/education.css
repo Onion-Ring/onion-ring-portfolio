@@ -156,12 +156,12 @@ iframe {
         display: none;
     }
 
+    .education-knowledge li {
+        margin-left: 0rem;
+        text-align: center;
+        list-style: none;
+    }
 
-                  .education-knowledge li {
-                      margin-left: 0rem;
-                      text-align: center;
-                      list-style: none;
-                  }
     .education-all-info{
         display: block;
     }
