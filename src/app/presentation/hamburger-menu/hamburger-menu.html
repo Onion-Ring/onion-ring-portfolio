@@ -1,17 +1,13 @@
 <div class="backdrop" [class.backdrop-fade-out-menu]="fadeOutMenu()" ></div>
-
 <div class="hamburger-menu" >
-
     <ul class="hamburger-menu__menu-options">     
-
         <li class="hamburger-menu__menu-options__option" [class.option-text-disappear]="fadeOutMenu()"><a href="#education" (click)="enableScroll()">Education</a></li>
         <li class="hamburger-menu__menu-options__option" [class.option-text-disappear]="fadeOutMenu()"><a href="#tech" (click)="enableScroll()">Tech Stack</a></li>
         <li class="hamburger-menu__menu-options__option" [class.option-text-disappear]="fadeOutMenu()"><a href="#projects" (click)="enableScroll()">My Projects</a></li>        
         <li class="hamburger-menu__menu-options__option" [class.option-text-disappear]="fadeOutMenu()"><a href="#certs" (click)="enableScroll()">Certifications</a></li>
         <li class="hamburger-menu__menu-options__option" [class.option-text-disappear]="fadeOutMenu()"><a href="#work" (click)="enableScroll()">Work Experience</a></li>
     </ul>
-
 </div>
-    <button (click)="onCloseHamburgerMenu()" class="hamburger-menu__close-btn">
-        <i class="codicon codicon-close"></i>
-    </button>
+<button (click)="onCloseHamburgerMenu()" class="hamburger-menu__close-btn">
+    <i class="codicon codicon-close"></i>
+</button>

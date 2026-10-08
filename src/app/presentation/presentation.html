@@ -7,7 +7,7 @@
     </div>
 
     @if (isHamburgerMenuOpen()) {
-    <app-hamburger-menu (hamburgerMenuClose)="onCloseHamburgerMenu()" />
+        <app-hamburger-menu (hamburgerMenuClose)="onCloseHamburgerMenu()" />
     }
 
     <div class="avatar_section">
@@ -32,7 +32,7 @@
 
     <app-notepad (clicked)="onNotepadClick($event)"         
         [zIndex]="activeFile() === 'experience.txt' ? 10 : 1"
-        filename="experience.txt" [width]="80" [height]="20" [left]="5" [top]="670"
+        filename="experience.txt" [width]="80" [height]="21" [left]="5" [top]="670"
         [content]="notepadContents[1]" [column]="1" [line]="1" />
 
     <app-notepad (clicked)="onNotepadClick($event)"                 
